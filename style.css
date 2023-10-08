@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: "Open Sans", sans-serif,Helvetica;
+body {
+    font-family: "Open Sans", sans-serif, Helvetica;
     line-height: 1.6;
     text-decoration: none;
 }
@@ -14,16 +15,17 @@ body{
 /*Cabezera*/
 
 nav {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));  
-   height: 100px;
-   text-align: center;
- }
-.menu{
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    height: 100px;
+    text-align: center;
+}
+
+.menu {
     list-style: none;
     padding: 0;
 }
 
-.nav-menu-item{
+.nav-menu-item {
     display: inline-block;
     font-weight: 400;
     font-size: 20px;
@@ -35,66 +37,64 @@ nav {
     transform: black 0.3, color 0.3s;
 }
 
-.nav-menu-item:hover{ 
-    background:#70E4F1 ;
-    color:#EAABD7; 
-    font-size: 22px;   
- }
+.nav-menu-item:hover {
+    background: #70E4F1;
+    color: #EAABD7;
+    font-size: 22px;
+}
 
- .logo{
+.logo {
     width: 391px;
     height: 166px;
-    margin:158px auto 105px;
+    margin: 158px auto 105px;
     text-align: center;
-    background:#F9E8F6;
+    background: #F9E8F6;
     border: 1px #1E2B38 solid;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
- }
+}
 
-.nombre{
-    font-size:36px;
+.nombre {
+    font-size: 36px;
     font-weight: bold;
 }
 
-.profesion{
+.profesion {
     font-size: 18px;
 }
 
 .retrato img {
     height: 200px;
-    width:  200px;
+    width: 200px;
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid #04254a;
     background-color: #fff;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-.fondo img´{
-    
-}
+.fondo img´ {}
 
 
 /*PROYECTOS*/
 
-.proyectos{
+.proyectos {
 
-    margin:20px;
-    text-align: center; 
-    background: #F2F2F2; 
- }
+    margin: 20px;
+    text-align: center;
+    background: #F2F2F2;
+}
 
- .proyectos h2{
+.proyectos h2 {
     font-size: 30px;
-    color:#323068;
- }
+    color: #323068;
+}
 
 .proyectos img {
-    width: 20%; 
+    width: 20%;
     margin: 1%;
     padding: 0.5%;
     border: 2px double #5A5A5A;
@@ -103,40 +103,40 @@ nav {
     transition: border 0.3, opacity 0.3s;
 }
 
-.proyectos img:hover{
+.proyectos img:hover {
     border: 2px solid #F2F2F2;
     opacity: 1;
 }
 
 /* FORMULARIO */
 
-.formulario{
+.formulario {
     padding: 20px;
     text-align: center;
 }
 
-.formulario h2{
+.formulario h2 {
 
     margin: 20px auto;
     padding: 10px;
     font-size: 34px;
-    color:#3895EA;   
+    color: #3895EA;
 }
 
 
-form{
+form {
     width: 75%;
     margin: 20px auto;
-    padding:10px;
-    background:rgba(170, 194, 204, 0.281);
+    padding: 10px;
+    background: rgba(170, 194, 204, 0.281);
     border-radius: 5px;
     backdrop-filter: blur(10px);
 }
 
-form label{
+form label {
     font-size: 18px;
     color: #3895EA;
-    display:block;
+    display: block;
     margin-bottom: 10px;
 }
 
@@ -153,8 +153,8 @@ form textarea {
 }
 
 .container {
-    display: flex; 
-    justify-content: center; 
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -163,16 +163,16 @@ form textarea {
     padding: 15px 0;
     font-size: 18px;
     font-weight: bold;
-    color:white;
-    background:#3895EA;
-    border:none;
+    color: white;
+    background: #3895EA;
+    border: none;
     border-radius: 5px;
     transition: background 0.3s, transform 0.3s;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-.enviar:hover{
-    background:#dcadb7;
+.enviar:hover {
+    background: #dcadb7;
     transform: scale(1.05);
 }
 
@@ -180,12 +180,12 @@ form textarea {
 footer {
     background: #1E2B38;
     height: 200px;
-    text-align: center; 
-}    
+    text-align: center;
+}
 
 footer img {
     width: 150px;
-    height: 110px; 
+    height: 110px;
     margin: 65px 45px;
     padding: 0.5%;
     border-radius: 5px;

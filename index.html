@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portafolio en línea de Alvarez Jesica, diseñadora web y desarrolladora front-end con experiencia en proyectos web creativos y funcionales. Muestra de trabajos y habilidades relacionadas con el diseño y desarrollo web.">
-    <meta name="keywords" content="Diseñador web, Desarrollador front-end, Portafolio en línea, Diseño de sitios web, HTML, CSS, JavaScript, Experiencia de usuario">
+    <meta name="description"
+        content="Portafolio en línea de Alvarez Jesica, diseñadora web y desarrolladora front-end con experiencia en proyectos web creativos y funcionales. Muestra de trabajos y habilidades relacionadas con el diseño y desarrollo web.">
+    <meta name="keywords"
+        content="Diseñador web, Desarrollador front-end, Portafolio en línea, Diseño de sitios web, HTML, CSS, JavaScript, Experiencia de usuario">
     <meta name="author" content="Alvarez Jesica">
     <title>Portfolio Alvarez Js</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
 </head>
-<body> 
+
+<body>
     <header class="header">
         <nav class="nav">
-            <ul class="menu" >
+            <ul class="menu">
                 <li class="nav-menu-item"><a href="#datosPersonales">Inicio</a></li>
                 <li class="nav-menu-item"><a href="#proyectosGenerales">Proyectos</a></li>
                 <li class="nav-menu-item"><a href="#habilidades">Habilidades</a></li>
@@ -27,7 +31,7 @@
                 <li class="nav-menu-item"><a href="#formulario">Contacto</a></li>
                 <li class="nav-menu-item" id="claro">&#9728</li>
                 <li class="nav-menu-item" id="oscuro">&#127771</li>
-            </ul>            
+            </ul>
         </nav>
 
         <div class="logo">
@@ -36,21 +40,25 @@
 
         </div>
 
-         <div class="presentacion">
+        <div class="presentacion">
             <div class="retrato">
                 <img src="/imagenes/WhatsApp Image 2022-10-29 at 12.51.18.png" alt="Foto de la autora">
             </div>
             <div class="detalle">
                 <h1>Acerca de Mì</h1>
-                    <p>
-                        "Me apasiona el desarrollo digital y cuento con 6 años de experiencia en el sector bancario, lo que me ha brindado habilidades de comunicación, análisis y gestión de proyectos. Mi objetivo es combinar mi experiencia financiera con las últimas tecnologías digitales para crear experiencias excepcionales.
-                     <br> Siempre estoy ávida de aprender. Aspiro a ser una profesional que aporte un valor significativo a cualquier equipo y proyecto."
-                    </p>
+                <p>
+                    "Me apasiona el desarrollo digital y cuento con 6 años de experiencia en el sector bancario, lo que
+                    me ha brindado habilidades de comunicación, análisis y gestión de proyectos. Mi objetivo es combinar
+                    mi experiencia financiera con las últimas tecnologías digitales para crear experiencias
+                    excepcionales.
+                    <br> Siempre estoy ávida de aprender. Aspiro a ser una profesional que aporte un valor significativo
+                    a cualquier equipo y proyecto."
+                </p>
             </div>
-         </div> 
-         <div class="fondo">
+        </div>
+        <div class="fondo">
             <img src="/imagenes/fondo.jpg" alt="Fondo del Enzabezado">
-         </div> 
+        </div>
     </header>
     <main class="main">
         <section class="proyectos" id="">
@@ -71,34 +79,34 @@
             <h2 id="formulario">Contacto</h2>
 
             <form id="planilla">
-            
-            <label>Cargo</label>
-            <input type="text" name="cargo" id="cargo"> 
 
-            <label>Empresa</label>
-            <input type="text" name="empresa" id="empresa">  
+                <label>Cargo</label>
+                <input type="text" name="cargo" id="cargo">
 
-            <label>Nombre y Apellido</label>
-            <input type="text" name="nombreApellido" id="nombreapellido" required> 
+                <label>Empresa</label>
+                <input type="text" name="empresa" id="empresa">
 
-            <label>Teléfono</label>
-            <input type="tel" name="telefono" id="telefono" placeholder="(xxx) xxxx-xxxx">
+                <label>Nombre y Apellido</label>
+                <input type="text" name="nombreApellido" id="nombreapellido" required>
 
-            <label>Correo Electrónico</label>
-            <input type="email" name="email" id="correoelectronico" placeholder="email@dominio.com">
+                <label>Teléfono</label>
+                <input type="tel" name="telefono" id="telefono" placeholder="(xxx) xxxx-xxxx">
 
-            <label for="mensaje"> Dejame tu comentario para poder seguir mejorando </label>
-            <textarea cols="70" rows="10" id="mensaje" required ></textarea>
+                <label>Correo Electrónico</label>
+                <input type="email" name="email" id="correoelectronico" placeholder="email@dominio.com">
 
-            <div class="container">
-                <button type="button" class="enviar" id="boton">Enviar</button>
-            </div>
+                <label for="mensaje"> Dejame tu comentario para poder seguir mejorando </label>
+                <textarea cols="70" rows="10" id="mensaje" required></textarea>
+
+                <div class="container">
+                    <button type="button" class="enviar" id="boton">Enviar</button>
+                </div>
 
             </form>
         </section>
 
     </main>
- 
+
 </body>
 <footer class="footer">
     <img src="/Iconos de redes/WhatsApp.png" alt="WhatsApp">
@@ -109,4 +117,5 @@
 
 
 </footer>
+
 </html>
