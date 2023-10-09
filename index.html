@@ -9,25 +9,18 @@
     <meta name="keywords"
         content="Diseñador web, Desarrollador front-end, Portafolio en línea, Diseño de sitios web, HTML, CSS, JavaScript, Experiencia de usuario">
     <meta name="author" content="Alvarez Jesica">
-    <title>Portfolio Alvarez Js</title>
+    <title>Portafolio Alvarez Js</title>
     <link rel="stylesheet" href="/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="Inicio">
         <nav class="nav">
             <ul class="menu">
-                <li class="nav-menu-item"><a href="#datosPersonales">Inicio</a></li>
-                <li class="nav-menu-item"><a href="#proyectosGenerales">Proyectos</a></li>
+                <li class="nav-menu-item"><a href="#inicio">Inicio</a></li>
+                <li class="nav-menu-item"><a href="#proyectos">Proyectos</a></li>
                 <li class="nav-menu-item"><a href="#habilidades">Habilidades</a></li>
-                <li class="nav-menu-item"><a href="#conocimientos">Educacion</a></li>
+                <li class="nav-menu-item"><a href="#educacion">Educacion</a></li>
                 <li class="nav-menu-item"><a href="#formulario">Contacto</a></li>
                 <li class="nav-menu-item" id="claro">&#9728</li>
                 <li class="nav-menu-item" id="oscuro">&#127771</li>
@@ -57,11 +50,11 @@
             </div>
         </div>
         <div class="fondo">
-            <img src="/imagenes/fondo.jpg" alt="Fondo del Enzabezado">
+            <img src="/imagenes/fondo.jpg" alt="Fondo del Encabezado">
         </div>
     </header>
     <main class="main">
-        <section class="proyectos" id="">
+        <section class="proyectos" id="proyectos">
             <h2>Proyectos</h2>
 
             <img src="/imagenes/Logo.jpg" alt="proyecto 1">
@@ -75,28 +68,70 @@
 
         </section>
 
-        <section class="formulario">
+        <section class="habilidades" id="habilidades">
+            <div class="habilidades-tecnicas">
+
+                <h2>Habilidades Técnicas</h2>
+
+                <div class="especializacion-DW">
+                    <h3>Diseño Web</h3>
+                    <ul class="lista-habilidades-tecnicas">
+                        <li class="item-tecnico"><img src="/imagenes/Habilidades Tecnicas/html-5.png"> HTML</li>
+                        <li class="item-tecnico"><img src="/imagenes/Habilidades Tecnicas/css-3.png"> Css</li>
+                        <li class="item-tecnico"><img src="/imagenes/Habilidades Tecnicas/java-script.png">JavaScript
+                        </li>
+                        <li class="item-tecnico"><img src="/imagenes/Habilidades Tecnicas/bootstrap.png"> Bootstrap
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="especializacion-UI">
+                    <h3>Diseño UI</h3>
+                    <ul class="lista-habilidades-tecnicas">
+                        <li class="item-tecnico"><img src="/imagenes/Habilidades Tecnicas/figma.png"> Figma</li>
+                    </ul>
+                </div>
+
+                <div class="especializacion-datos">
+                    <h3>Analista de Datos</h3>
+                    <ul class="lista-habilidades-tecnicas">
+                        <li class="item-tecnico"><img src="/imagenes/Habilidades Tecnicas/mysql.png"> MySql</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="habilidades-blandas">
+                <h2>Habilidades Blandas</h2>
+                <ul class="lista-habilidades-blandas">
+                    <li class="item-habilidades-blandas">Adaptación al cambio</li>
+                    <li class="item-habilidades-blandas">Tolerancia a la presión </li>
+                    <li class="item-habilidades-blandas">Orientación a resultados</li>
+                    <li class="item-habilidades-blandas">Capacidad de Aprendizaje</li>
+                    <li class="item-habilidades-blandas">Innovación</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="educacion" id="educacion">
+            <h2>Educación Formal</h2>
+
+            <h2>Certificados de Cursos</h2>
+
+        </section>
+
+        <section class="formulario" id="formulario">
             <h2 id="formulario">Contacto</h2>
 
             <form id="planilla">
+                <input type="text" name="nombreApellido" id="nombreapellido" placeholder="Apellido y Nombre" required>
 
-                <label>Cargo</label>
-                <input type="text" name="cargo" id="cargo">
+                <input type="email" name="email" id="correoelectronico" placeholder="Correo Electronico">
 
-                <label>Empresa</label>
-                <input type="text" name="empresa" id="empresa">
+                <input type="tel" name="telefono" id="telefono" placeholder="Telefono">
 
-                <label>Nombre y Apellido</label>
-                <input type="text" name="nombreApellido" id="nombreapellido" required>
-
-                <label>Teléfono</label>
-                <input type="tel" name="telefono" id="telefono" placeholder="(xxx) xxxx-xxxx">
-
-                <label>Correo Electrónico</label>
-                <input type="email" name="email" id="correoelectronico" placeholder="email@dominio.com">
-
-                <label for="mensaje"> Dejame tu comentario para poder seguir mejorando </label>
-                <textarea cols="70" rows="10" id="mensaje" required></textarea>
+                <textarea cols="70" rows="10" id="mensaje"
+                    placeholder="Dejame tu comentario para poder seguir mejorando" required></textarea>
 
                 <div class="container">
                     <button type="button" class="enviar" id="boton">Enviar</button>
@@ -114,6 +149,9 @@
     <img src="/Iconos de redes/Facebook.png" alt="Facebook">
     <img src="/Iconos de redes/Linkedin.png" alt="Linkedin">
     <img src="/Iconos de redes/Github.png" alt="Github">
+
+    <a href="https://www.flaticon.com/free-icons/figma" title="figma icons">Figma icons created by Freepik -
+        Flaticon</a>
 
 
 </footer>
