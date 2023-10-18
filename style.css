@@ -6,13 +6,16 @@
     box-sizing: border-box;
 }
 
-body {
+main {
     font-family: "Open Sans", sans-serif, Helvetica;
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*Cabecera*/
-.nav{
+.nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -22,8 +25,10 @@ body {
     transition: 0.7s;
     padding: 30px 20px;
     z-index: 10;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); /* Gradiente de blanco a transparente */
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.01); /* Agrega sombra al header */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    /* Gradiente de blanco a transparente */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.01);
+    /* Agrega sombra al header */
 }
 
 .menu {
@@ -49,33 +54,48 @@ body {
     font-size: 22px;
 }
 
-.fondo{
+.fondo {
     position: relative;
     width: 100%;
     height: 600px;
-    background:url(/imagenes/fondo2.jpg);
-    background-size:cover;
+    background: url(/imagenes/fondo2.jpg);
+    background-size: cover;
     background-position: center;
-    overflow:visible;
+    overflow: visible;
 
 }
 
 .logo {
-    width: 391px; /* Ancho del elemento de logo */
-    height: 166px; /* Altura del elemento de logo */
-    text-align: center; /* Centra el texto dentro del elemento */
-    background: #F9E8F6; /* Color de fondo del elemento de logo */
-    border: 1px solid #1E2B38; /* Borde del elemento de logo */
-    border-radius: 10px; /* Radio de borde para suavizar las esquinas */
-    display: flex; /* Activa el modelo de caja flexible */
-    flex-direction: column; /* Orienta los elementos de forma vertical */
-    justify-content: center; /* Centra verticalmente los elementos */
-    align-items: center; /* Centra horizontalmente los elementos */
-    position: absolute; /* Posiciona el elemento de forma absoluta en relación con su contenedor */
-    top: 50%; /* Ubica el elemento en el 50% desde la parte superior del contenedor padre */
-    left: 50%; /* Ubica el elemento en el 50% desde el lado izquierdo del contenedor padre */
-    transform: translate(-50%, -50%); /* Ajusta la posición del elemento a la mitad de su tamaño para centrarlo */
-    margin: auto; /* Establece el margen automáticamente para centrar horizontalmente */
+    width: 391px;
+    /* Ancho del elemento de logo */
+    height: 166px;
+    /* Altura del elemento de logo */
+    text-align: center;
+    /* Centra el texto dentro del elemento */
+    background: #F9E8F6;
+    /* Color de fondo del elemento de logo */
+    border: 1px solid #1E2B38;
+    /* Borde del elemento de logo */
+    border-radius: 10px;
+    /* Radio de borde para suavizar las esquinas */
+    display: flex;
+    /* Activa el modelo de caja flexible */
+    flex-direction: column;
+    /* Orienta los elementos de forma vertical */
+    justify-content: center;
+    /* Centra verticalmente los elementos */
+    align-items: center;
+    /* Centra horizontalmente los elementos */
+    position: absolute;
+    /* Posiciona el elemento de forma absoluta en relación con su contenedor */
+    top: 50%;
+    /* Ubica el elemento en el 50% desde la parte superior del contenedor padre */
+    left: 50%;
+    /* Ubica el elemento en el 50% desde el lado izquierdo del contenedor padre */
+    transform: translate(-50%, -50%);
+    /* Ajusta la posición del elemento a la mitad de su tamaño para centrarlo */
+    margin: auto;
+    /* Establece el margen automáticamente para centrar horizontalmente */
 }
 
 .nombre {
@@ -89,7 +109,8 @@ body {
 
 .retrato {
     position: absolute;
-    bottom: -100px; /* Ajusta este valor según sea necesario */
+    bottom: -100px;
+    /* Ajusta este valor según sea necesario */
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -107,42 +128,47 @@ body {
 }
 
 
-.presentacion{
+.presentacion {
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    margin: 10px auto; /* Para centrar horizontalmente */
+    margin: 10px auto;
+    /* Para centrar horizontalmente */
 }
 
 .detalle {
-    text-align: center; /* Centra el texto dentro del contenedor. */
+    text-align: center;
+    /* Centra el texto dentro del contenedor. */
 }
 
 .parrafo {
-    margin-top: 25px; /* Establece el margen superior en 25px */
-    margin-bottom: 12.5px; /* Establece la mitad del margen superior en la parte inferior (12.5px) */
+    margin-top: 25px;
+    /* Establece el margen superior en 25px */
+    margin-bottom: 12.5px;
+    /* Establece la mitad del margen superior en la parte inferior (12.5px) */
     padding: 25px;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.6;
 }
 
 /*PROYECTOS*/
 
 .proyectos {
+    width: 100%;
     margin: 20px;
     text-align: center;
-    background: #F2F2F2;
+    background: rgba(170, 194, 204, 0.281);
     display: flex;
-    flex-direction: column; /* Establece el eje principal como columna */
+    flex-direction: column;
     align-items: center;
 }
 
 .titulo {
     margin-top: 20px;
-    margin-bottom: 5px; /* Ajusta el espacio entre el título y la lista */
+    margin-bottom: 5px;
     font-size: 30px;
     color: #323068;
 }
@@ -173,7 +199,7 @@ body {
 
 .proyecto img:hover {
     border: 2px double #5A5A5A;
-    
+
     opacity: 1;
 }
 
@@ -183,11 +209,11 @@ body {
 .habilidades {
     margin: 20px;
     text-align: center;
-    display:flex;
-    justify-content:space-around;
+    display: flex;
+    justify-content: space-around;
 }
 
-.titulo-tecnico{
+.titulo-tecnico {
     font-size: 30px;
     color: #323068;
 }
@@ -205,7 +231,7 @@ body {
     margin: 10px;
 }
 
-.especializacion{
+.especializacion {
     margin: 20px 0;
 }
 
@@ -214,103 +240,90 @@ body {
     color: #323068;
 }
 
-.habilidades-tecnicas li{
+.habilidades-tecnicas li {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
     width: 100%;
 }
 
-.lista-habilidades-tecnicas img{
+.lista-habilidades-tecnicas img {
     width: 50%;
     margin-right: 10px;
     border: 2px double #5A5A5A;
     border-radius: 5px;
     opacity: 0.7;
-    transition: border 0.3,opacity 0.3s;
+    transition: border 0.3, opacity 0.3s;
 }
-.lista-habilidades-tecnicas img:hover{
-    border: 2px solid #F2F2F2;
+
+.lista-habilidades-tecnicas img:hover {
+    border: 2px solid #f2f2f2;
     opacity: 1;
 }
 
 /* EDUCACION */
 
-.educacion{
+.educacion {
     text-align: center;
-    background-color:#F2F2F2 ;
+    background-color: #F2F2F2;
 }
 
 
 /* FORMULARIO */
-
 .formulario {
-    padding: 20px;
+    width: 100%;
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.titulo-form {
+    font-size: 30px;
+    color: #3895EA;
     text-align: center;
 }
 
-.formulario h2 {
-
-    margin: 20px auto;
-    padding: 10px;
-    font-size: 34px;
-    color: #3895EA;
-}
-
 form {
-    width: 75%;
-    margin: 20px auto;
-    padding: 10px;
-    background: rgba(170, 194, 204, 0.281);
+    width: 50%; /* Reducir el ancho del formulario para mejorar la legibilidad */
+    padding: 20px; /* Aumentar el espacio interno para mejorar la presentación */
     border-radius: 5px;
     backdrop-filter: blur(10px);
-  
-}
-
-form input[type="text"],
-form textarea {
-    display: block;
-    margin-bottom: 20px;
-    width: 100%;
-    border: 1px solid #3895EA;
-    border-radius: 5px;
-}
-
-form input[type="tel"],
-form input[type="email"]{
-    margin-bottom: 20px;
-    width: 40%;
-    border: 1px solid #3895EA;
-    border-radius: 5px;
-    height: 50px;
-    
-}
-
-form input[type="text"]{
-    height: 50px;
-}
-
-input::placeholder {
-    font-size: 18px;
-    margin-left: 10%;
-}
-
-textarea::placeholder {
-    font-size: 18px;
-    
-}
-
-
-.container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
-.enviar {
-    width: 25%;
-    padding: 15px 0;
+#planilla input[type="text"],
+#planilla input[type="tel"],
+#planilla input[type="email"],
+#planilla textarea {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%; /* Modificado para ocupar el 100% del ancho del contenedor */
+    padding: 10px;
+    border: 1px solid  #CECECE;
+    border-radius: 5px;
+    
+}
+
+#planilla input[type="text"] {
+    height: 50px;
+}
+
+#planilla input::placeholder,
+#planilla textarea::placeholder {
     font-size: 18px;
+    margin-left: 10%;
+    color: #CECECE;
+}
+.enviar {
+    width: 250%;
+    padding: 15px 0;
+    font-size: 20px;
     font-weight: bold;
     color: white;
     background: #3895EA;
@@ -327,16 +340,34 @@ textarea::placeholder {
 
 /*PIE DE PAGINA*/
 
-footer {
+
+.informacion{
+    width: 100%;
     background: #1E2B38;
-    height: 200px;
     text-align: center;
 }
 
-footer img {
+
+.redes { 
+    height: 200px;
+}
+
+.icono-redes {
     width: 150px;
-    height: 110px;
     margin: 65px 45px;
     padding: 0.5%;
     border-radius: 5px;
 }
+
+.copy-autor,
+.copy-imagenes{
+    text-decoration: none;
+    color:#f2f2f2;
+    font-size: 20px;
+}
+
+.figma{
+    text-decoration: none;
+    color:#f2f2f2;
+}
+    
