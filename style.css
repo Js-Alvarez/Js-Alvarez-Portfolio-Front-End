@@ -40,6 +40,7 @@ main {
     font-family: "Open Sans";
     text-decoration: none;
     color: rgb(7, 7, 7);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
     letter-spacing: 2px;
     font-weight: 600;
     transition: all 0.3s;
@@ -158,6 +159,7 @@ main {
 
 .proyectos {
     width: 100%;
+    height: 90vh;
     margin: 20px;
     text-align: center;
     background: rgba(170, 194, 204, 0.281);
@@ -167,7 +169,6 @@ main {
 }
 
 .titulo {
-    margin-top: 20px;
     margin-bottom: 5px;
     font-size: 30px;
     color: #323068;
@@ -189,7 +190,7 @@ main {
 }
 
 .proyecto img {
-    width: 235px;
+    width: 50%;
     margin: 10px;
     border: 2px solid #F2F2F2;
     border-radius: 5px;
@@ -207,67 +208,118 @@ main {
 /* HABILIDADES*/
 
 .habilidades {
-    margin: 20px;
+    width: 53%;
     text-align: center;
-    display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .titulo-tecnico {
-    font-size: 30px;
+    margin-bottom: 5px;
     color: #323068;
-}
-
-
-/* Estilo para los elementos de la lista de habilidades técnicas */
-.habilidades-tecnicas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 30%;
-    border: 2px solid #04254a;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px;
 }
 
 .especializacion {
-    margin: 20px 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: 10px;
+
 }
 
-.subtitulo-tecnicas {
-    font-size: 24px;
-    color: #323068;
+.subtitulo-tecnico {
+    text-align: left;
+    margin-left: 10px;
+
 }
 
-.habilidades-tecnicas li {
+.certificados-tecnicos .lista-habilidades-tecnicas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.certificados-tecnicos .lista-habilidades-tecnicas .item-tecnico img {
+    margin: 10px;
+    padding: 5px;
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
-    width: 100%;
+    font-size: 15px;
 }
 
-.lista-habilidades-tecnicas img {
-    width: 50%;
+.certificados-tecnicos .lista-habilidades-tecnicas .item-tecnico img {
+    max-width: 100px;
+    max-height: 100px;
     margin-right: 10px;
-    border: 2px double #5A5A5A;
-    border-radius: 5px;
-    opacity: 0.7;
-    transition: border 0.3, opacity 0.3s;
+    /* Ajusta el margen derecho para separar las imágenes */
 }
 
-.lista-habilidades-tecnicas img:hover {
-    border: 2px solid #f2f2f2;
-    opacity: 1;
-}
-
-/* EDUCACION */
-
-.educacion {
+.item-tecnico {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    background-color: #F2F2F2;
 }
 
+
+
+.certificados-tecnicos .item-tecnico {
+    font-size: 20px;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    max-width: 150px;
+    /* Ajustar el ancho máximo de los elementos de la lista */
+    text-align: center;
+    /* Alinear el texto al centro dentro del elemento */
+}
+
+.habilidades-blandas {
+    width: 100%;
+    background: rgba(170, 194, 204, 0.281);
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+
+.lista-habilidades-blandas {
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border: 2px solid black;
+    list-style: none;
+
+}
+/* EDUCACION */
+.educacion{
+    background: rgba(170, 194, 204, 0.281); 
+    margin-top: 3%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.titulo-educacion{
+    width: 100%;
+    font-size: 50px;
+    color: #323068;
+    text-align: center;
+}
+.contenedor-de-educacion{ 
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.detalle-educacion{
+    width: 50%;
+    padding: 1%;
+    margin:  5% 10% 5% 20%;
+}
+.certificados img{
+    max-width: 60%;
+    margin: 1%;   
+}
 
 /* FORMULARIO */
 .formulario {
@@ -279,6 +331,7 @@ main {
     align-items: center;
     text-align: center;
     justify-content: center;
+    border: none;
 }
 
 .titulo-form {
@@ -288,8 +341,10 @@ main {
 }
 
 form {
-    width: 50%; /* Reducir el ancho del formulario para mejorar la legibilidad */
-    padding: 20px; /* Aumentar el espacio interno para mejorar la presentación */
+    width: 50%;
+    /* Reducir el ancho del formulario para mejorar la legibilidad */
+    padding: 20px;
+    /* Aumentar el espacio interno para mejorar la presentación */
     border-radius: 5px;
     backdrop-filter: blur(10px);
     display: flex;
@@ -303,11 +358,13 @@ form {
 #planilla textarea {
     display: block;
     margin-bottom: 20px;
-    width: 100%; /* Modificado para ocupar el 100% del ancho del contenedor */
+    width: 100%;
+    /* Modificado para ocupar el 100% del ancho del contenedor */
     padding: 10px;
-    border: 1px solid  #CECECE;
+    border: 1px solid #CECECE;
     border-radius: 5px;
-    
+    margin-left: 10px;
+
 }
 
 #planilla input[type="text"] {
@@ -320,6 +377,7 @@ form {
     margin-left: 10%;
     color: #CECECE;
 }
+
 .enviar {
     width: 250%;
     padding: 15px 0;
@@ -338,17 +396,14 @@ form {
     transform: scale(1.05);
 }
 
-/*PIE DE PAGINA*/
-
-
-.informacion{
+.informacion {
     width: 100%;
     background: #1E2B38;
     text-align: center;
 }
 
 
-.redes { 
+.redes {
     height: 200px;
 }
 
@@ -360,14 +415,13 @@ form {
 }
 
 .copy-autor,
-.copy-imagenes{
+.copy-imagenes {
     text-decoration: none;
-    color:#f2f2f2;
+    color: #f2f2f2;
     font-size: 20px;
 }
 
-.figma{
+.figma {
     text-decoration: none;
-    color:#f2f2f2;
+    color: #f2f2f2;
 }
-    
