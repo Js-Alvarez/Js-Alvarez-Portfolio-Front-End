@@ -157,6 +157,7 @@ main {
 }
 /*PROYECTO*/
 .proyectos {
+
     margin: 20px;
     text-align: center;
     background: #F2F2F2;
@@ -204,7 +205,6 @@ main {
     border: 2px solid #F2F2F2;
     opacity: 1;
 }
-
 /* HABILIDADES*/
 
 .habilidades {
@@ -336,7 +336,7 @@ main {
 }
 
 .detalle-educacion {
-        width: 50% !important; /* Ajusta el ancho según sea necesario */
+     width: 50% !important; /* Ajusta el ancho según sea necesario */
     padding: 1%;
     font-size: 24px;
     text-align: center;
@@ -448,7 +448,7 @@ form {
 }
 
 .icono-redes {
-    width: 150px;
+    width: 7%;
     margin: 65px 45px;
     padding: 0.5%;
     border-radius: 5px;
@@ -464,4 +464,27 @@ form {
 .figma {
     text-decoration: none;
     color: #f2f2f2;
+}
+
+@media screen and (max-width:800px){
+    heder{
+        width: 100%;
+    }
+    main {
+        width: 100%;
+        background: #dcadb7;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+    form{
+        background: bisque;
+    }
+
+    .enviar  {
+        background: black;
+    }
+    
 }
