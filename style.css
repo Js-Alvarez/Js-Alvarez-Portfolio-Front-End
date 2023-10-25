@@ -6,6 +6,8 @@
     box-sizing: border-box;
 }
 
+/*-------MAIN--------------------------------------MAIN------------------------------------------------MAIN-------*/
+
 main {
     font-family: "Open Sans", sans-serif, Helvetica;
     line-height: 1.6;
@@ -14,7 +16,7 @@ main {
     align-items: center;
 }
 
-/*Cabecera*/
+/*-------Cabecera--------------------------------------Cabecera------------------------------------------------Cabecera-------*/
 .nav {
     position: fixed;
     top: 0;
@@ -155,7 +157,8 @@ main {
     font-size: 20px;
     line-height: 1.6;
 }
-/*PROYECTO*/
+/*-------PROYECTO--------------------------------------PROYECTO------------------------------------------------PROYECTO-------*/
+
 .proyectos {
 
     margin: 20px;
@@ -164,7 +167,13 @@ main {
     display: flex;
     flex-direction: column; /* Establece el eje principal como columna */
     align-items: center;
-}
+    view-timeline-name: --animacion; /*Nombre de la animacion*/
+    view-timeline-axis: block; /*Elegimos el eje*/
+    animation-timeline: --animacion;
+    animation-name: show;
+    animation-range: entry 25% cover 50%; /*la imagen comiensa con 25% y termina 50%*/
+    animation-fill-mode: both; /*Funciona en ambos sentido (de arriba a bajo y de abajo para arriba)*/
+}   
 
 .titulo {
     margin-bottom: 5px; /* Ajusta el espacio entre el título y la lista */
@@ -205,13 +214,19 @@ main {
     border: 2px solid #F2F2F2;
     opacity: 1;
 }
-/* HABILIDADES*/
+/*------------------------ HABILIDADES-------------------------------------------------*/
 
 .habilidades {
     width: 53%;
     text-align: center;
     justify-content: center;
     padding: 6px;
+    view-timeline-name: --animacion; /*Nombre de la animacion*/
+    view-timeline-axis: block; /*Elegimos el eje*/
+    animation-timeline: --animacion;
+    animation-name: show;
+    animation-range: entry 25% cover 50%; /*la imagen comiensa con 25% y termina 50%*/
+    animation-fill-mode: both; /*Funciona en ambos sentido (de arriba a bajo y de abajo para arriba)*/
 }
 
 .habilidades h2{
@@ -305,7 +320,8 @@ main {
     .item-tecnico p {
         margin-top: 5px; /* Ajusta el margen superior para separar la imagen del texto */
     }
-/* EDUCACION */
+
+ /*-------EDUCACION--------------------------------------EDUCACION------------------------------------------------EDUCACION-------*/
 .educacion {
     width: 100%;
     background: rgba(170, 194, 204, 0.281);
@@ -314,6 +330,12 @@ main {
     align-items: center;
     justify-content: center;
     text-align: center; /* Asegura que el texto esté centrado */
+    view-timeline-name: --animacion; /*Nombre de la animacion*/
+    view-timeline-axis: block; /*Elegimos el eje*/
+    animation-timeline: --animacion;
+    animation-name: show;
+    animation-range: entry 25% cover 50%; /*la imagen comiensa con 25% y termina 50%*/
+    animation-fill-mode: both; /*Funciona en ambos sentido (de arriba a bajo y de abajo para arriba)*/
 }
 
 .titulo-educacion {
@@ -359,9 +381,7 @@ main {
     margin: 0 auto; /* Alinea la imagen horizontalmente en el centro */
 }
 
-    
-
-/* FORMULARIO */
+  /*-------FORMULARIO--------------------------------------FORMULARIO------------------------------------------------FORMULARIO-------*/   
 .formulario {
     width: 100%;
     margin: 20px;
@@ -372,6 +392,8 @@ main {
     text-align: center;
     justify-content: center;
     border: none;
+    animation-range: entry 25% cover 50%; /*la imagen comiensa con 25% y termina 50%*/
+    animation-fill-mode: both; /*Funciona en ambos sentido (de arriba a bajo y de abajo para arriba)*/
 }
 
 .titulo-form {
@@ -390,6 +412,12 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    view-timeline-name: --animacion; /*Nombre de la animacion*/
+    view-timeline-axis: block; /*Elegimos el eje*/
+    animation-timeline: --animacion;
+    animation-name: show;
+    animation-range: entry 25% cover 50%; /*la imagen comiensa con 25% y termina 50%*/
+    animation-fill-mode: both; /*Funciona en ambos sentido (de arriba a bajo y de abajo para arriba)*/
 }
 
 #planilla input[type="text"],
@@ -398,8 +426,7 @@ form {
 #planilla textarea {
     display: block;
     margin-bottom: 20px;
-    width: 100%;
-    /* Modificado para ocupar el 100% del ancho del contenedor */
+    width: 100%;/* Modificado para ocupar el 100% del ancho del contenedor */
     padding: 10px;
     border: 1px solid #CECECE;
     border-radius: 5px;
@@ -466,7 +493,22 @@ form {
     color: #f2f2f2;
 }
 
-@media screen and (max-width:800px){
+/*--------------------ANIMACION----------------------------------------------------*/
+@keyframes show{
+    from{ /*  Va a ser un 25% de su tamaño original y transparente al iniciar la animacion*/
+        opacity: 0;
+        scale:25% ;
+    }
+
+    to{/* Va a finalizar con el color y el tamaño normal*/
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+
+/*--------------------RESPONSIBIDAD----------------------------------------------------*/
+@media screen and (max-width:1024px){
     heder{
         width: 100%;
     }
@@ -485,6 +527,21 @@ form {
 
     .enviar  {
         background: black;
-    }
+    }   
+}
+
+@media screen and (max-width:768px) {
+    
+}
+
+@media screen and (max-width:600px) {
+    
+}
+
+@media screen and (max-width:480px) {
+    
+}
+
+@media screen and (max-width:320px) {
     
 }
