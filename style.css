@@ -61,7 +61,7 @@ main {
     position: relative;
     width: 100%;
     height: 600px;
-    background: url(/imagenes/fondo2.jpg);
+    background: url(./imagenes/fondo2.jpg);
     background-size: cover;
     background-position: center;
     overflow: visible;
