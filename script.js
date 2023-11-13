@@ -11,3 +11,11 @@ toggle.addEventListener('change', (event) => {
         label_toggle.innerHTML = '&#127771;'; // Oscuro
     }
 });
+
+
+//---------------------carrusel-------------------------------//
+
+
+
+
+

@@ -25,8 +25,16 @@ html {
   }
 
 
+/* -------------Para Js cambiar de Claro a Oscuro-------------------------------------------------*/
 body{
     transition: all 1.5s ease;
+}
+
+
+/* -------------Para el rediccionamiento del Nav -------------------------------------------------*/
+
+section[id]{
+    scroll-margin-top:50px;
 }
 
 /*-------Cabecera--------------------------------------Cabecera------------------------------------------------Cabecera-------*/
@@ -180,7 +188,6 @@ body{
 .proyectos {
     height: auto;
     margin: 20px;
-    margin-top: 15%;;
     text-align: center;
     background: rgba(255, 255, 255,0.5); /* Cambiado a un color sólido con transparencia */
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.01);
@@ -257,7 +264,6 @@ body{
 }
 
 .habilidades h2{
-    margin-top: 6%;
     margin-bottom: 10px;
     
 }
@@ -275,10 +281,10 @@ body{
 
 .especializacion {
     border-radius: 5px;
-    margin: 10px; /* Ajusta según tus preferencias de margen */
+    margin: 10px; 
     padding: 6px;
     text-align: center;
-    width: 30%; /* Ajusta según tus preferencias de ancho */
+    width: 30%;
 }
 
 .subtitulo-tecnico{
@@ -303,9 +309,21 @@ body{
     margin-top: 1.5%;
     font-size: 25px;
     display: flex;
-    transition: transform 0.5s ease; /* Ajusté la duración y añadí la unidad 's' */
-   overflow: hidden;
+    transition: transform 0.5s ease; 
+    width: 100%; 
+
 }
+
+.lista-habilidades-tecnicas-DW{
+    margin: 10px;
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    width: 10%;
+}
+
 
 .item-tecnico {
     margin: 10px;
@@ -314,7 +332,9 @@ body{
     flex-direction: column;
     align-items: center;
     list-style: none;
+    width: 50%;
 }
+
 
 .certificados-tecnicos .item-tecnico img {
     max-width: 100px;
@@ -323,14 +343,7 @@ body{
     margin: 0 10px;
 }
 
-.carrusel-container-DW,
-.carrusel-container-UI,
-.carrusel-container-BD {
-    display: flex;
-    justify-content: center; /* Centra la lista horizontalmente en su contenedor */
-    align-items: center; /* Centra la lista verticalmente en su contenedor */
-    overflow: hidden; /* Evita que los elementos se desborden del contenedor */
-}
+
 
 /*-------------HABILIDADES BLANDAS--------------*/
 .habilidades-blandas {
