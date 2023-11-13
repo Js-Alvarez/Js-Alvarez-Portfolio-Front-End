@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body>
+<body >
     <header class="header" id="inicio">
         <nav class="nav">
             <ul class="menu">
@@ -22,41 +22,42 @@
                 <li class="nav-menu-item"><a href="#habilidades">Habilidades</a></li>
                 <li class="nav-menu-item"><a href="#educacion">Educacion</a></li>
                 <li class="nav-menu-item"><a href="#formulario">Contacto</a></li>
-                <li class="nav-menu-item" id="claro">&#9728</li>
-                <li class="nav-menu-item" id="oscuro">&#127771</li>
             </ul>
+
+            <label for="toggle" id="label_toggle">&#127771;</label>
+            <input type="checkbox" id="toggle">
         </nav>
+    </header>
+    <section class="fondo">
+        <article class="logo">
+            <p class="nombre">Alvarez Jesica</p>
+            <p class="profesion">Desarrolladora Web</p>
+        </article>
 
-        <section class="fondo">
-            <article class="logo">
-                <p class="nombre">Alvarez Jesica</p>
-                <p class="profesion">Desarrolladora Web</p>
-            </article>
+        <article class="retrato">
+            <img src="./imagenes/WhatsApp Image 2022-10-29 at 12.51.18.png" alt="Foto de la autora">
+        </article>
+    </section>
 
-            <article class="retrato">
-                <img src="./imagenes/WhatsApp Image 2022-10-29 at 12.51.18.png" alt="Foto de la autora">
-            </article>
-        </section>
+    <section class="presentacion">
+        <div class="detalle">
+            <h1>Acerca de Mì</h1>
 
-        <section class="presentacion">
-            <div class="detalle">
-                <h1>Acerca de Mì</h1>
-
-                <div class="parrafo">
-                    <p>
-                        "Me apasiona el desarrollo digital y cuento con 6 años de experiencia en el sector bancario, lo
-                        que
-                        me ha brindado habilidades de comunicación, análisis y gestión de proyectos. Mi objetivo es
-                        combinar
-                        mi experiencia financiera con las últimas tecnologías digitales para crear experiencias
-                        excepcionales.
-                        <br> Siempre estoy ávida de aprender. Aspiro a ser una profesional que aporte un valor
-                        significativo
-                        a cualquier equipo y proyecto."
-                    </p>
-                </div>
+            <div class="parrafo">
+                <p>
+                    "Me apasiona el desarrollo digital y cuento con 6 años de experiencia en el sector bancario, lo
+                    que
+                    me ha brindado habilidades de comunicación, análisis y gestión de proyectos. Mi objetivo es
+                    combinar
+                    mi experiencia financiera con las últimas tecnologías digitales para crear experiencias
+                    excepcionales.
+                    <br> Siempre estoy ávida de aprender. Aspiro a ser una profesional que aporte un valor
+                    significativo
+                    a cualquier equipo y proyecto."
+                </p>
             </div>
-        </section>
+        </div>
+    </section>
     </header>
 
     <main class="main">
@@ -68,27 +69,43 @@
                 <ul class="proyectos-enumerados">
                     <li class="proyecto">
                         <img src="./imagenes/Logo.jpg" alt="proyecto 1">
+                        <p>"Nombre del Proyecto"</p>
+                        <p>Lenguaje</p>
                     </li>
                     <li class="proyecto">
                         <img src="./imagenes/Logo.jpg" alt="proyecto 2">
+                        <p>"Nombre del Proyecto"</p>
+                        <p>Lenguaje</p>
                     </li>
                     <li class="proyecto">
                         <img src="./imagenes/Logo.jpg" alt="proyecto 3">
+                        <p>"Nombre del Proyecto"</p>
+                        <p>Lenguaje</p>
                     </li>
                     <li class="proyecto">
                         <img src="./imagenes/Logo.jpg" alt="proyecto 4">
+                        <p>"Nombre del Proyecto"</p>
+                        <p>Lenguaje</p>
                     </li>
                     <li class="proyecto">
                         <img src="./imagenes/Logo.jpg" alt="proyecto 5">
+                        <p>"Nombre del Proyecto"</p>
+                        <p>Lenguaje</p>
                     </li>
                     <li class="proyecto">
                         <img src="./imagenes/Logo.jpg" alt="proyecto 6">
+                        <p>"Nombre del Proyecto"</p>
+                        <p>Lenguaje</p>
                     </li>
                     <li class="proyecto">
                         <img src="./imagenes/Logo.jpg" alt="proyecto 7">
+                        <p>"Nombre del Proyecto"</p>
+                        <p>Lenguaje</p>
                     </li>
                     <li class="proyecto">
                         <img src="./imagenes/Logo.jpg" alt="proyecto 8">
+                        <p>"Nombre del Proyecto"</p>
+                        <p>Lenguaje</p>
                     </li>
                 </ul>
             </div>
@@ -97,74 +114,87 @@
         <section class="habilidades" id="habilidades">
             <div class="titulo">
                 <h2>Habilidades</h2>
-            </div>
-            <section class="habilidades-tecnicas">
 
-                <h3 class="titulo-tecnico">Habilidades Técnicas</h3>
+                <section class="habilidades-tecnicas">
 
-                <div class="certificados-tecnicos">
+                    <h3 class="titulo-tecnico">Habilidades Técnicas</h3>
 
-                    <div class="especializacion">
-                        <h4 class="subtitulo-tecnico">Diseño Web</h4>
+                    <div class="certificados-tecnicos">
 
-                        <ul class="lista-habilidades-tecnicas">
-                            <li class="item-tecnico">
-                                <img src="./imagenes/Habilidades Tecnicas/html-5.png" alt="HTML Icon">
-                                <p> HTML </p>
-                            </li>
+                        <div class="especializacion" id="designSkillsCarousel">
+                            <h4 class="subtitulo-tecnico">Diseño Web</h4>
+                            <div class="carrusel-container-DW">
+                                <ul class="lista-habilidades-tecnicas">
+                                    <li class="item-tecnico">
+                                        <img src="./imagenes/Habilidades Tecnicas/html-5.png" alt="HTML Icon">
+                                        <p> HTML </p>
+                                    </li>
 
-                            <li class="item-tecnico">
-                                <img src="./imagenes/Habilidades Tecnicas/css-3.png" alt="CSS Icon">
-                                <p> CSS </p>
-                            </li>
+                                    <li class="item-tecnico">
+                                        <img src="./imagenes/Habilidades Tecnicas/css-3.png" alt="CSS Icon">
+                                        <p> CSS </p>
+                                    </li>
 
-                            <li class="item-tecnico">
-                                <img src="./imagenes/Habilidades Tecnicas/java-script.png" alt="Java Script">
-                                <p> JavaScript </p>
-                            </li>
+                                    <li class="item-tecnico">
+                                        <img src="./imagenes/Habilidades Tecnicas/java-script.png" alt="Java Script">
+                                        <p> JavaScript </p>
+                                    </li>
 
-                            <li class="item-tecnico">
-                                <img src="./imagenes/Habilidades Tecnicas/bootstrap.png" alt="Booststrap Icon">
-                                <p> Bootstrap </p>
-                            </li>
+                                    <li class="item-tecnico">
+                                        <img src="./imagenes/Habilidades Tecnicas/bootstrap.png" alt="Booststrap Icon">
+                                        <p> Bootstrap </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="especializacion" id="designUxSkillsCarousel">
+                            <h4 class="subtitulo-tecnico-UI">Diseño Ui</h4>
+                            <div class="carrusel-container">
+                                <ul class="lista-habilidades-tecnicas">
+                                    <li class="item-tecnico">
+                                        <img src="./imagenes/Habilidades Tecnicas/figma.png" alt="Figma Icon">
+                                        Figma
+                                    </li>
+
+                                    <li class="item-tecnico">
+                                        <img src="./imagenes/Habilidades Tecnicas/whimsical.png" alt="Logo whimsical">
+                                        Whimsical
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="especializacion" id="databaseSkillsCarousel">
+                            <h4 class="subtitulo-tecnico-BD">Base de datos</h4>
+                            <div class="carrusel-container">
+                                <ul class="lista-habilidades-tecnicas">
+                                    <li class="item-tecnico">
+                                        <img src="./imagenes/Habilidades Tecnicas/mysql.png">
+                                        MySql
+                                    </li>
+                                    <li class="item-tecnico">
+                                        <img src="./imagenes/Habilidades Tecnicas/mysql.png">
+                                        MySql
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="habilidades-blandas">
+                    <h3 class="titulo-tecnico">Habilidades Blandas</h3>
+                    <div>
+                        <ul class="lista-habilidades-blandas">
+                            <li class="item-habilidades-blandas">Adaptación al cambio</li>
+                            <li class="item-habilidades-blandas">Tolerancia a la presión </li>
+                            <li class="item-habilidades-blandas">Orientación a resultados</li>
+                            <li class="item-habilidades-blandas">Capacidad de Aprendizaje</li>
+                            <li class="item-habilidades-blandas">Innovación</li>
                         </ul>
                     </div>
 
-                    <div class="especializacion">
-                        <h4 class="subtitulo-tecnico">Diseño UI</h4>
-                        <ul class="lista-habilidades-tecnicas">
-                            <li class="item-tecnico">
-                                <img src="./imagenes/Habilidades Tecnicas/figma.png" alt="Figma Icon">
-                                Figma
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="especializacion">
-                        <h4 class="subtitulo-tecnico">Analista de Datos</h4>
-                        <ul class="lista-habilidades-tecnicas">
-                            <li class="item-tecnico">
-                                <img src="./imagenes/Habilidades Tecnicas/mysql.png">
-                                MySql
-                            </li>
-                        </ul>
-                    </div>
                 </div>
-            </section>
-
-            <div class="habilidades-blandas">
-                <h3 class="titulo-tecnico">Habilidades Blandas</h3>
-                <div>
-                    <ul class="lista-habilidades-blandas">
-                        <li class="item-habilidades-blandas">Adaptación al cambio</li>
-                        <li class="item-habilidades-blandas">Tolerancia a la presión </li>
-                        <li class="item-habilidades-blandas">Orientación a resultados</li>
-                        <li class="item-habilidades-blandas">Capacidad de Aprendizaje</li>
-                        <li class="item-habilidades-blandas">Innovación</li>
-                    </ul>
-                </div>
-
-            </div>
 
         </section>
 
@@ -174,14 +204,12 @@
             </div>
             <div class="contenedor-de-educacion">
                 <div class="detalle-educacion">
-                    <h3> "Desarrolladora Full Stack Junior"</h3>
-                    <p> Superior Politécnico Córdoba</p>
-                    <h4> M.R. Resolución CFE N°
-                        737/22</h4>
+                    <h3> "Tecnicatura Superior en
+                        Desarrollo Web y Aplicaciones Digitales"</h3>
+                    <p> 2022 - Cursando 2do año</p>
                 </div>
                 <div class="certificados">
-                    <img src="./imagenes/Certificados/Certificado Full Stack.pdf.png" alt="Certificado de estudio">
-                </div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/j40akBlwFoM?si=VtOM6oilQK8b0a0x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </section>
     </main>
@@ -212,10 +240,15 @@
 
         <section class="informacion">
             <div class="redes">
-                <a href="https://wa.me/5493885961454?text=Hola,%20gracias%20por%20contactarme.%20¿Cómo%20puedo%20ayudarte?"><img class="icono-redes" src="./imagenes/Iconos de redes/WhatsApp.png" alt="WhatsApp"></a>
-                <a href="mailto:alvarezjs1990@gmail.com"><img class="icono-redes" src="./imagenes/Iconos de redes/Correo Electronico.png" alt="correo-electronico"></a>
-                <a href="https://www.linkedin.com/in/alvarez-jesica/"><img class="icono-redes" src="./imagenes/Iconos de redes/Linkedin.png" alt="Linkedin"></a> 
-                <a href="https://github.com/Js-Alvarez"><img class="icono-redes" src="./imagenes/Iconos de redes/Github.png" alt="Github"></a> 
+                <a
+                    href="https://wa.me/5493885961454?text=Hola,%20gracias%20por%20contactarme.%20¿Cómo%20puedo%20ayudarte?"><img
+                        class="icono-redes" src="./imagenes/Iconos de redes/WhatsApp.png" alt="WhatsApp"></a>
+                <a href="mailto:alvarezjs1990@gmail.com"><img class="icono-redes"
+                        src="./imagenes/Iconos de redes/Correo Electronico.png" alt="correo-electronico"></a>
+                <a href="https://www.linkedin.com/in/alvarez-jesica/"><img class="icono-redes"
+                        src="./imagenes/Iconos de redes/Linkedin.png" alt="Linkedin"></a>
+                <a href="https://github.com/Js-Alvarez"><img class="icono-redes"
+                        src="./imagenes/Iconos de redes/Github.png" alt="Github"></a>
             </div>
 
             <div class="copy-imagenes">
@@ -224,13 +257,13 @@
             </div>
 
             <div class="copy-autor">
-                <p>&copy; 2023 Alvarez Jesica. Todos los derechos reservados.</p>
+                <p>&copy; 2023 Developer by Alvarez Jesica. Todos los derechos reservados.</p>
             </div>
 
             </div>
     </footer>
 
-    <script src="/script.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
