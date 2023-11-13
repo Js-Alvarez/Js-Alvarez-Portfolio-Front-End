@@ -5,11 +5,11 @@
 ¡Bienvenido a mi proyecto! Este es un espacio emocionante donde trabajo constantemente en cosas geniales.
 Soy Jesi, una apasionada desarrolladora web. Este es mi portafolio donde empiezo a  compartir algunos de mis proyectos y habilidades.
 
-## :tw-2728: Acerca de Mí :tw-2728:
+## 🌟 Acerca de Mí :tw-2728:
 
 Soy una entusiasta de la tecnología y actualmente estoy aprendiendo y mejorando mis habilidades como desarrollador web. Me encanta trabajar en proyectos interesantes y desafiantes que me permitan crecer profesionalmente.
 
-## :tw-270f:  Habilidades
+##:tw-270f Habilidades
 - HTML
 - CSS
 - JavaScript
@@ -19,11 +19,11 @@ Soy una entusiasta de la tecnología y actualmente estoy aprendiendo y mejorando
 - Otros: Bootstrap
 
 
-# :fa-folder-open-o: Instalación
+# :fa-folder-open-o: Instalación 
 
 Para comenzar, sigue estos simples pasos:
 
-## :fa-files-o: Clonar Repositorio del Portafolio :fa-files-o:
+##:fa-files-o: Clonar Repositorio del Portafolio :fa-files-o:
 
 Si deseas contribuir o simplemente explorar el código de mi portafolio, puedes seguir estos pasos para clonar el repositorio a tu máquina local.
 
@@ -64,7 +64,7 @@ Una vez que hayas completado la instalación ya puedes ejecutar el proyecto.
 
 ¡Si encuentras algún problema o tienes alguna sugerencia, por favor, comentamelo!
 
-## :tw-1f4e7: Contacto
+## :tw-1f4e7: Contacto :tw-1f4e7:
 
 Si tienes alguna pregunta, no dudes en ponerte en contacto con migo a mì e-mail alvarezjs@gmail.com.
 
