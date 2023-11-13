@@ -201,17 +201,16 @@ section[id]{
     animation-range: entry 25% cover 50%; /*la imagen comiensa con 25% y termina 50%*/
     animation-fill-mode: both; /*Funciona en ambos sentido (de arriba a bajo y de abajo para arriba)*/
 }   
-
 .titulo {
     margin-bottom: 5px; /* Ajusta el espacio entre el título y la lista */
     font-size: 30px;
     color: #323068;
     height: 70%;
 }
-
-.proyectos h2 {
+.proyecto h2{
     margin-top: 30%;
 }
+   
 
 .proyectos-enumerados {
     display: grid;
@@ -248,13 +247,12 @@ section[id]{
     opacity: 1;
 
 }
-/*------------------------ HABILIDADES-------------------------------------------------*/
-
+/*------------------------ HABILIDADES TEcnicas-------------------------------------------------*/
 .habilidades {
     width: 53%;
+    background: rgba(255, 255, 255,0.5); /* Cambiado a un color sólido con transparencia */
     text-align: center;
     padding: 6px;
-    background: rgba(255, 255, 255, 0.5);
     view-timeline-name: --animacion; /*Nombre de la animacion*/
     view-timeline-axis: block; /*Elegimos el eje*/
     animation-timeline: --animacion;
@@ -264,8 +262,8 @@ section[id]{
 }
 
 .habilidades h2{
+    margin-top: 6%;
     margin-bottom: 10px;
-    
 }
 
 .titulo-tecnico {
@@ -281,10 +279,10 @@ section[id]{
 
 .especializacion {
     border-radius: 5px;
-    margin: 10px; 
+    margin: 10px; /* Ajusta según tus preferencias de margen */
     padding: 6px;
     text-align: center;
-    width: 30%;
+    width: 30%; /* Ajusta según tus preferencias de ancho */
 }
 
 .subtitulo-tecnico{
@@ -292,49 +290,26 @@ section[id]{
 }
 
 .especializacion:hover {
-    background: rgba(255, 255, 255, 0.5);
-    border: 5px solid #dcadb7;
-    border-radius: 10px;
-    opacity: 0.9;
-}
+    border: 8px solid #323068;
+    background:#3895EA ;
+    border-radius: 5px;
 
-.habilidades-blandas:hover{
-    background: rgba(255, 255, 255, 0.5);
-    border: 5px solid #3895EA ;
-    border-radius: 10px;
 }
 
 .lista-habilidades-tecnicas {
-    padding: 6px;
-    margin-top: 1.5%;
-    font-size: 25px;
     display: flex;
-    transition: transform 0.5s ease; 
-    width: 100%; 
-
-}
-
-.lista-habilidades-tecnicas-DW{
-    margin: 10px;
-    padding: 6px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Puedes ajustar esto según tus preferencias */
+    padding: 0;
     list-style: none;
-    width: 10%;
 }
-
 
 .item-tecnico {
-    margin: 10px;
-    padding: 6px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    list-style: none;
-    width: 50%;
+    flex: 0 0 48%; /* Puedes ajustar el tamaño según tus preferencias */
+    margin-bottom: 10px; /* Espacio entre los elementos */
+    text-align: center;
+    margin-top: 30px;
 }
-
 
 .certificados-tecnicos .item-tecnico img {
     max-width: 100px;
@@ -342,8 +317,6 @@ section[id]{
     flex: 0 0 auto;
     margin: 0 10px;
 }
-
-
 
 /*-------------HABILIDADES BLANDAS--------------*/
 .habilidades-blandas {
