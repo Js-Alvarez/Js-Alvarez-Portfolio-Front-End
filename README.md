@@ -1,15 +1,16 @@
 [![Readme.jpg](https://i.postimg.cc/Kvt3Pzxs/Readme.jpg)](https://postimg.cc/svD2y3Bp)
 
+¡Bienvenido a mi proyecto! Este es un espacio emocionante donde trabajo constantemente en cosas geniales. Soy Jesi, una apasionada desarrolladora web. Este es mi portafolio donde empiezo a compartir algunos de mis proyectos y habilidades.
 
+<details>
+<summary>✨ Acerca de Mí ! ✨ </summary>
 
-¡Bienvenido a mi proyecto! Este es un espacio emocionante donde trabajo constantemente en cosas geniales.
-Soy Jesi, una apasionada desarrolladora web. Este es mi portafolio donde empiezo a  compartir algunos de mis proyectos y habilidades.
+Soy una entusiasta de la tecnología y actualmente estoy aprendiendo y mejorando mis habilidades como "Desarrollador Web". Me encanta trabajar en proyectos interesantes y desafiantes que me permitan crecer profesionalmente.
+</details>
 
-## ✨ Acerca de Mí ! ✨
+<details>
+<summary>🤓 Habilidades </summary>
 
-Soy una entusiasta de la tecnología y actualmente estoy aprendiendo y mejorando mis habilidades como desarrollador web. Me encanta trabajar en proyectos interesantes y desafiantes que me permitan crecer profesionalmente.
-
-## 🤓 Habilidades
 - HTML
 - CSS
 - JavaScript
@@ -17,9 +18,10 @@ Soy una entusiasta de la tecnología y actualmente estoy aprendiendo y mejorando
 - Control de Versiones: Git
 - Base de Datos: MySql
 - Otros: Bootstrap
+</details>
 
-
-# 📁 Instalación 
+<details>
+<summary>📁 Instalación</summary> 
 
 Para comenzar, sigue estos simples pasos:
 
@@ -43,7 +45,7 @@ Si deseas contribuir o simplemente explorar el código de mi portafolio, puedes 
 
 4. **Clona el Repositorio:**
    - Utiliza el siguiente comando para clonar el repositorio:
-
+   
      ```bash
      git clone https://github.com/Js-Alvarez/Js-Alvarez-Portfolio-Front-End.git
      ```
@@ -53,23 +55,6 @@ Si deseas contribuir o simplemente explorar el código de mi portafolio, puedes 
    ```bash
    git clone git@github.com:Js-Alvarez/Js-Alvarez-Portfolio-Front-End.git
 
-
-1. Clona este repositorio: `https://github.com/Js-Alvarez/Js-Alvarez-Portfolio-Front-End.git`
-2. Instala las dependencias: `npm install`
-
-##  Uso 🖱️
-
-Una vez que hayas completado la instalación ya puedes ejecutar el proyecto.
-¡Y eso es todo! Ahora puedes explorarlo! 👩🏻‍💻
-
-¡Si encuentras algún problema o tienes alguna sugerencia, por favor, comentamelo!
-
-## 📩 Contacto 
-Si tienes alguna pregunta, no dudes en ponerte en contacto con migo a mì e-mail alvarezjs@gmail.com.
-
- 🌎 ¡Gracias por ser parte! 🤝
-
-###End
 
 
 

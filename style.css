@@ -22,19 +22,19 @@ main {
 /* -------------Configura el desplazamiento suave en todo el documento -------------------------------------------------*/
 html {
     scroll-behavior: smooth;
-  }
+}
 
 
 /* -------------Para Js cambiar de Claro a Oscuro-------------------------------------------------*/
-body{
+body {
     transition: all 1.5s ease;
 }
 
 
 /* -------------Para el rediccionamiento del Nav -------------------------------------------------*/
 
-section[id]{
-    scroll-margin-top:50px;
+section[id] {
+    scroll-margin-top: 50px;
 }
 
 /*-------Cabecera--------------------------------------Cabecera------------------------------------------------Cabecera-------*/
@@ -75,16 +75,16 @@ section[id]{
     font-size: 22px;
 }
 
-#toggle{
+#toggle {
     display: none;
 }
 
-#label_toggle{
-    font-size: 30px;  
+#label_toggle {
+    font-size: 30px;
     cursor: pointer;
 }
 
-.dark{
+.dark {
     background-color: black;
     color: #dcadb7;
     transition: all 1.5s ease;
@@ -142,6 +142,7 @@ section[id]{
     margin-top: 2%;
     font-size: 20px;
 }
+
 .retrato {
     position: absolute;
     bottom: -100px;
@@ -161,6 +162,7 @@ section[id]{
     border: 2px solid #04254a;
     background-color: #fff;
 }
+
 .presentacion {
     width: 50%;
     display: flex;
@@ -181,36 +183,46 @@ section[id]{
 .parrafo {
     margin: 3%;
     font-size: 25px;
-   
+
 }
+
 /*-------PROYECTO--------------------------------------PROYECTO------------------------------------------------PROYECTO-------*/
 
 .proyectos {
     height: auto;
     margin: 20px;
     text-align: center;
-    background: rgba(255, 255, 255,0.5); /* Cambiado a un color sólido con transparencia */
+    background: rgba(255, 255, 255, 0.5);
+    /* Cambiado a un color sólido con transparencia */
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.01);
     display: flex;
-    flex-direction: column; /* Establece el eje principal como columna */
+    flex-direction: column;
+    /* Establece el eje principal como columna */
     align-items: center;
-    view-timeline-name: --animacion; /*Nombre de la animacion*/
-    view-timeline-axis: block; /*Elegimos el eje*/
+    view-timeline-name: --animacion;
+    /*Nombre de la animacion*/
+    view-timeline-axis: block;
+    /*Elegimos el eje*/
     animation-timeline: --animacion;
     animation-name: show;
-    animation-range: entry 25% cover 50%; /*la imagen comiensa con 25% y termina 50%*/
-    animation-fill-mode: both; /*Funciona en ambos sentido (de arriba a bajo y de abajo para arriba)*/
-}   
+    animation-range: entry 25% cover 50%;
+    /*la imagen comiensa con 25% y termina 50%*/
+    animation-fill-mode: both;
+    /*Funciona en ambos sentido (de arriba a bajo y de abajo para arriba)*/
+}
+
 .titulo {
-    margin-bottom: 5px; /* Ajusta el espacio entre el título y la lista */
+    margin-bottom: 5px;
+    /* Ajusta el espacio entre el título y la lista */
     font-size: 30px;
     color: #323068;
     height: 70%;
 }
-.proyecto h2{
+
+.proyecto h2 {
     margin-top: 30%;
 }
-   
+
 
 .proyectos-enumerados {
     display: grid;
@@ -239,29 +251,35 @@ section[id]{
 }
 
 .proyecto p {
-    margin-top: 5px; 
+    margin-top: 5px;
 }
 
 .proyecto img:hover {
-    border: 2px double #5A5A5A ;
+    border: 2px double #5A5A5A;
     opacity: 1;
 
 }
+
 /*------------------------ HABILIDADES TEcnicas-------------------------------------------------*/
 .habilidades {
     width: 53%;
-    background: rgba(255, 255, 255,0.5); /* Cambiado a un color sólido con transparencia */
+    background: rgba(255, 255, 255, 0.5);
+    /* Cambiado a un color sólido con transparencia */
     text-align: center;
     padding: 6px;
-    view-timeline-name: --animacion; /*Nombre de la animacion*/
-    view-timeline-axis: block; /*Elegimos el eje*/
+    view-timeline-name: --animacion;
+    /*Nombre de la animacion*/
+    view-timeline-axis: block;
+    /*Elegimos el eje*/
     animation-timeline: --animacion;
     animation-name: show;
-    animation-range: entry 25% cover 50%; /*la imagen comiensa con 25% y termina 50%*/
-    animation-fill-mode: both; /*Funciona en ambos sentido (de arriba a bajo y de abajo para arriba)*/
+    animation-range: entry 25% cover 50%;
+    /*la imagen comiensa con 25% y termina 50%*/
+    animation-fill-mode: both;
+    /*Funciona en ambos sentido (de arriba a bajo y de abajo para arriba)*/
 }
 
-.habilidades h2{
+.habilidades h2 {
     margin-top: 6%;
     margin-bottom: 10px;
 }
@@ -274,24 +292,27 @@ section[id]{
 .certificados-tecnicos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; /* O utiliza "space-between" según tus preferencias */
+    justify-content: space-around;
+    /* O utiliza "space-between" según tus preferencias */
 }
 
 .especializacion {
     border-radius: 5px;
-    margin: 10px; /* Ajusta según tus preferencias de margen */
+    margin: 10px;
+    /* Ajusta según tus preferencias de margen */
     padding: 6px;
     text-align: center;
-    width: 30%; /* Ajusta según tus preferencias de ancho */
+    width: 30%;
+    /* Ajusta según tus preferencias de ancho */
 }
 
-.subtitulo-tecnico{
+.subtitulo-tecnico {
     font-size: 25px;
 }
 
 .especializacion:hover {
     border: 8px solid #323068;
-    background:#3895EA ;
+    background: #3895EA;
     border-radius: 5px;
 
 }
@@ -299,14 +320,17 @@ section[id]{
 .lista-habilidades-tecnicas {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; /* Puedes ajustar esto según tus preferencias */
+    justify-content: space-around;
+    /* Puedes ajustar esto según tus preferencias */
     padding: 0;
     list-style: none;
 }
 
 .item-tecnico {
-    flex: 0 0 48%; /* Puedes ajustar el tamaño según tus preferencias */
-    margin-bottom: 10px; /* Espacio entre los elementos */
+    flex: 0 0 48%;
+    /* Puedes ajustar el tamaño según tus preferencias */
+    margin-bottom: 10px;
+    /* Espacio entre los elementos */
     text-align: center;
     margin-top: 30px;
 }
@@ -334,19 +358,28 @@ section[id]{
     padding: 6px;
 }
 
-    .item-tecnico img {
-        width: 150px; /* Ajusta el ancho de la imagen según sea necesario */
-        height: auto; /* Ajusta la altura de la imagen de forma proporcional */
-    }
-    
-    .item-tecnico p {
-        margin-top: 5px; /* Ajusta el margen superior para separar la imagen del texto */
-    }
+.item-habilidades-blandas::before {
+    /*Pone un icono frente a los elementos de la lista*/
+    content: "💾 ";
+}
 
- /*-------EDUCACION--------------------------------------EDUCACION------------------------------------------------EDUCACION-------*/
- .educacion {
+.item-tecnico img {
+    width: 150px;
+    /* Ajusta el ancho de la imagen según sea necesario */
+    height: auto;
+    /* Ajusta la altura de la imagen de forma proporcional */
+}
+
+.item-tecnico p {
+    margin-top: 5px;
+    /* Ajusta el margen superior para separar la imagen del texto */
+}
+
+/*-------EDUCACION--------------------------------------EDUCACION------------------------------------------------EDUCACION-------*/
+.educacion {
     width: 53%;
-    height: 600px; /* Establecido un alto fijo de 600px */
+    height: 600px;
+    /* Establecido un alto fijo de 600px */
     margin: 30px;
     background: rgba(255, 255, 255, 0.5);
     display: flex;
@@ -392,7 +425,7 @@ section[id]{
 
 
 
-  /*-------FORMULARIO--------------------------------------FORMULARIO------------------------------------------------FORMULARIO-------*/   
+/*-------FORMULARIO--------------------------------------FORMULARIO------------------------------------------------FORMULARIO-------*/
 .formulario {
     width: 100%;
     margin: 20px;
@@ -403,8 +436,10 @@ section[id]{
     text-align: center;
     justify-content: center;
     border: none;
-    animation-range: entry 25% cover 50%; /*la imagen comiensa con 25% y termina 50%*/
-    animation-fill-mode: both; /*Funciona en ambos sentido (de arriba a bajo y de abajo para arriba)*/
+    animation-range: entry 25% cover 50%;
+    /*la imagen comiensa con 25% y termina 50%*/
+    animation-fill-mode: both;
+    /*Funciona en ambos sentido (de arriba a bajo y de abajo para arriba)*/
 }
 
 .titulo-form {
@@ -423,12 +458,16 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    view-timeline-name: --animacion; /*Nombre de la animacion*/
-    view-timeline-axis: block; /*Elegimos el eje*/
+    view-timeline-name: --animacion;
+    /*Nombre de la animacion*/
+    view-timeline-axis: block;
+    /*Elegimos el eje*/
     animation-timeline: --animacion;
     animation-name: show;
-    animation-range: entry 25% cover 50%; /*la imagen comiensa con 25% y termina 50%*/
-    animation-fill-mode: both; /*Funciona en ambos sentido (de arriba a bajo y de abajo para arriba)*/
+    animation-range: entry 25% cover 50%;
+    /*la imagen comiensa con 25% y termina 50%*/
+    animation-fill-mode: both;
+    /*Funciona en ambos sentido (de arriba a bajo y de abajo para arriba)*/
 }
 
 #planilla input[type="text"],
@@ -437,7 +476,8 @@ form {
 #planilla textarea {
     display: block;
     margin-bottom: 20px;
-    width: 100%;/* Modificado para ocupar el 100% del ancho del contenedor */
+    width: 100%;
+    /* Modificado para ocupar el 100% del ancho del contenedor */
     padding: 10px;
     border: 1px solid black;
     border-radius: 5px;
@@ -505,13 +545,15 @@ form {
 }
 
 /*--------------------ANIMACION----------------------------------------------------*/
-@keyframes show{
-    from{ /*  Va a ser un 25% de su tamaño original y transparente al iniciar la animacion*/
+@keyframes show {
+    from {
+        /*  Va a ser un 25% de su tamaño original y transparente al iniciar la animacion*/
         opacity: 0;
-        scale:25% ;
+        scale: 25%;
     }
 
-    to{/* Va a finalizar con el color y el tamaño normal*/
+    to {
+        /* Va a finalizar con el color y el tamaño normal*/
         opacity: 1;
         scale: 100%;
     }
@@ -519,40 +561,33 @@ form {
 
 
 /*--------------------RESPONSIBIDAD----------------------------------------------------*/
-@media screen and (max-width:1024px){
-    heder{
+@media screen and (max-width:1024px) {
+    heder {
         width: 100%;
     }
+
     main {
         width: 100%;
         background: #dcadb7;
     }
 
-    footer{
+    footer {
         width: 100%;
     }
 
-    form{
+    form {
         background: bisque;
     }
 
-    .enviar  {
+    .enviar {
         background: black;
-    }   
+    }
 }
 
-@media screen and (max-width:768px) {
-    
-}
+@media screen and (max-width:768px) {}
 
-@media screen and (max-width:600px) {
-    
-}
+@media screen and (max-width:600px) {}
 
-@media screen and (max-width:480px) {
-    
-}
+@media screen and (max-width:480px) {}
 
-@media screen and (max-width:320px) {
-    
-}
+@media screen and (max-width:320px) {}
