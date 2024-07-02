@@ -1,593 +1,478 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #323068;
+  --seconds: #3895ea;
+  --third: #eaabd7;
+  --gray: #5a5a5a;
+}
+
+/*-------Cabecera--------------------------------------Cabecera------------------------------------------------Cabecera-------*/
+.image-container {
+  width: 100%;
+  display: inline-block;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+.logo img {
+  width: 5%;
+  height: 5%;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.menu {
+  position: fixed;
+  width: 100%;
+  padding: 30px 20px;
+  position: absolute;
+  top: 0;
+  left: o;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.01);
+}
+
+.lista-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.descripcion {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.descripcion .contenedor-informacion{
+    color: #f2f2f2;
+    font-size: %;
+
+}
+
+.descripcion .retrato img {
+  width: 25%;
+  border-radius: 100%;
+  border: solid white;
 }
 
 /*-------MAIN--------------------------------------MAIN------------------------------------------------MAIN-------*/
 main {
-    font-family: "Open Sans", sans-serif, Helvetica;
-    line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: url('./imagenes/acuarela') center/cover no-repeat fixed;
-    background-color: rgba(0, 0, 0, 0.5);
-    position: relative;
+  font-family: "Open Sans", sans-serif, Helvetica;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("./imagenes/acuarela") center/cover no-repeat fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
 }
-
 
 /* -------------Configura el desplazamiento suave en todo el documento -------------------------------------------------*/
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
-
 
 /* -------------Para Js cambiar de Claro a Oscuro-------------------------------------------------*/
 body {
-    transition: all 1.5s ease;
+  transition: all 1.5s ease;
 }
-
 
 /* -------------Para el rediccionamiento del Nav -------------------------------------------------*/
 
 section[id] {
-    scroll-margin-top: 50px;
+  scroll-margin-top: 50px;
 }
 
-/*-------Cabecera--------------------------------------Cabecera------------------------------------------------Cabecera-------*/
-.nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    transition: 0.7s;
-    padding: 30px 20px;
-    z-index: 10;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.01);
-}
-
-.menu {
-    list-style: none;
-    display: flex;
-}
-
-.menu li a {
-    font-family: "Open Sans";
-    text-decoration: none;
-    color: rgb(7, 7, 7);
-    letter-spacing: 2px;
-    font-weight: 600;
-    transition: all 0.3s;
-    font-size: 25px;
-    padding: 15px 20px;
-    text-transform: uppercase;
-}
-
-.nav li a:hover {
-    background: #70E4F1;
-    color: #EAABD7;
-    font-size: 22px;
-}
-
-#toggle {
-    display: none;
-}
-
-#label_toggle {
-    font-size: 30px;
-    cursor: pointer;
-}
-
-.dark {
-    background-color: black;
-    color: #dcadb7;
-    transition: all 1.5s ease;
-}
-
-.fondo {
-    position: relative;
-    width: 100%;
-    height: 500px;
-    background: url(./imagenes/fondoHeader.jpg);
-    background-size: cover;
-    background-position: center;
-    overflow: visible;
-}
-
-.logo {
-    width: 391px;
-    /* Ancho del elemento de logo */
-    height: 166px;
-    /* Altura del elemento de logo */
-    text-align: center;
-    /* Centra el texto dentro del elemento */
-    background: #F9E8F6;
-    /* Color de fondo del elemento de logo */
-    border: 1px solid #1E2B38;
-    /* Borde del elemento de logo */
-    border-radius: 10px;
-    /* Radio de borde para suavizar las esquinas */
-    display: flex;
-    /* Activa el modelo de caja flexible */
-    flex-direction: column;
-    /* Orienta los elementos de forma vertical */
-    justify-content: center;
-    /* Centra verticalmente los elementos */
-    align-items: center;
-    /* Centra horizontalmente los elementos */
-    position: absolute;
-    /* Posiciona el elemento de forma absoluta en relación con su contenedor */
-    top: 50%;
-    /* Ubica el elemento en el 50% desde la parte superior del contenedor padre */
-    left: 50%;
-    /* Ubica el elemento en el 50% desde el lado izquierdo del contenedor padre */
-    transform: translate(-50%, -50%);
-    /* Ajusta la posición del elemento a la mitad de su tamaño para centrarlo */
-    margin: auto;
-    /* Establece el margen automáticamente para centrar horizontalmente */
-}
-
-.nombre {
-    font-size: 36px;
-    font-weight: bold;
-}
-
-.profesion {
-    margin-top: 2%;
-    font-size: 20px;
-}
-
-.retrato {
-    position: absolute;
-    bottom: -100px;
-    /* Ajusta este valor según sea necesario */
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.retrato img {
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    border: 2px solid #04254a;
-    background-color: #fff;
-}
-
-.presentacion {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    margin: 10px auto;
-    /* Para centrar horizontalmente */
-}
-
-.detalle {
-    text-align: center;
-    margin-top: 80px;
-    font-size: 30px;
-}
-
-.parrafo {
-    margin: 3%;
-    font-size: 25px;
-
-}
+/*--------PROYECTO--------------------------------------PROYECTO------------------------------------------------PROYECTO-------*/
 
 /*-------PROYECTO--------------------------------------PROYECTO------------------------------------------------PROYECTO-------*/
 
 .proyectos {
-    height: auto;
-    margin: 20px;
-    text-align: center;
-    background: rgba(255, 255, 255, 0.5);
-    /* Cambiado a un color sólido con transparencia */
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.01);
-    display: flex;
-    flex-direction: column;
-    /* Establece el eje principal como columna */
-    align-items: center;
-    view-timeline-name: --animacion;
-    /*Nombre de la animacion*/
-    view-timeline-axis: block;
-    /*Elegimos el eje*/
-    animation-timeline: --animacion;
-    animation-name: show;
-    animation-range: entry 25% cover 50%;
-    /*la imagen comiensa con 25% y termina 50%*/
-    animation-fill-mode: both;
-    /*Funciona en ambos sentido (de arriba a bajo y de abajo para arriba)*/
+  height: auto;
+  margin: 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.5);
+  /* Cambiado a un color sólido con transparencia */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.01);
+  display: flex;
+  flex-direction: column;
+  /* Establece el eje principal como columna */
+  align-items: center;
+  view-timeline-name: --animacion;
+  /*Nombre de la animacion*/
+  view-timeline-axis: block;
+  /*Elegimos el eje*/
+  animation-timeline: --animacion;
+  animation-name: show;
+  animation-range: entry 25% cover 50%;
+  /*la imagen comiensa con 25% y termina 50%*/
+  animation-fill-mode: both;
+  /*Funciona en ambos sentido (de arriba a bajo y de abajo para arriba)*/
 }
 
 .titulo {
-    margin-bottom: 5px;
-    /* Ajusta el espacio entre el título y la lista */
-    font-size: 30px;
-    color: #323068;
-    height: 70%;
+  margin-bottom: 5px;
+  /* Ajusta el espacio entre el título y la lista */
+  font-size: 30px;
+  color: var(--primary);
+  height: 70%;
 }
 
 .proyecto h2 {
-    margin-top: 30%;
+  margin-top: 30%;
 }
 
-
 .proyectos-enumerados {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 .proyecto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .proyecto img {
-    border: 2px solid #F2F2F2;
-    border-radius: 5px;
-    opacity: 0.5;
-    transition: border 0.3s, opacity 0.3s;
-    width: 235px;
-    margin-bottom: 10px;
+  border: 2px solid #f2f2f2;
+  border-radius: 5px;
+  opacity: 0.5;
+  transition: border 0.3s, opacity 0.3s;
+  width: 235px;
+  margin-bottom: 10px;
 }
 
 .proyecto p {
-    margin-top: 5px;
+  margin-top: 5px;
 }
 
 .proyecto img:hover {
-    border: 2px double #5A5A5A;
-    opacity: 1;
-
+  border: 2px double var(--gray);
+  opacity: 1;
 }
 
 /*------------------------ HABILIDADES TEcnicas-------------------------------------------------*/
 .habilidades {
-    width: 53%;
-    background: rgba(255, 255, 255, 0.5);
-    /* Cambiado a un color sólido con transparencia */
-    text-align: center;
-    padding: 6px;
-    view-timeline-name: --animacion;
-    /*Nombre de la animacion*/
-    view-timeline-axis: block;
-    /*Elegimos el eje*/
-    animation-timeline: --animacion;
-    animation-name: show;
-    animation-range: entry 25% cover 50%;
-    /*la imagen comiensa con 25% y termina 50%*/
-    animation-fill-mode: both;
-    /*Funciona en ambos sentido (de arriba a bajo y de abajo para arriba)*/
+  width: 53%;
+  background: rgba(255, 255, 255, 0.5);
+  /* Cambiado a un color sólido con transparencia */
+  text-align: center;
+  padding: 6px;
+  view-timeline-name: --animacion;
+  /*Nombre de la animacion*/
+  view-timeline-axis: block;
+  /*Elegimos el eje*/
+  animation-timeline: --animacion;
+  animation-name: show;
+  animation-range: entry 25% cover 50%;
+  /*la imagen comiensa con 25% y termina 50%*/
+  animation-fill-mode: both;
+  /*Funciona en ambos sentido (de arriba a bajo y de abajo para arriba)*/
 }
 
 .habilidades h2 {
-    margin-top: 6%;
-    margin-bottom: 10px;
+  margin-top: 6%;
+  margin-bottom: 10px;
 }
 
 .titulo-tecnico {
-    margin-bottom: 5px;
-    color: #323068;
+  margin-bottom: 5px;
+  color: var(--primary);
 }
 
 .certificados-tecnicos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    /* O utiliza "space-between" según tus preferencias */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* O utiliza "space-between" según tus preferencias */
 }
 
 .especializacion {
-    border-radius: 5px;
-    margin: 10px;
-    /* Ajusta según tus preferencias de margen */
-    padding: 6px;
-    text-align: center;
-    width: 30%;
-    /* Ajusta según tus preferencias de ancho */
+  border-radius: 5px;
+  margin: 10px;
+  /* Ajusta según tus preferencias de margen */
+  padding: 6px;
+  text-align: center;
+  width: 30%;
+  /* Ajusta según tus preferencias de ancho */
 }
 
 .subtitulo-tecnico {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .especializacion:hover {
-    border: 8px solid #323068;
-    background: #3895EA;
-    border-radius: 5px;
-
+  border: 8px solid var(--primary);
+  background: var(--seconds);
+  border-radius: 5px;
 }
 
 .lista-habilidades-tecnicas {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    /* Puedes ajustar esto según tus preferencias */
-    padding: 0;
-    list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* Puedes ajustar esto según tus preferencias */
+  padding: 0;
+  list-style: none;
 }
 
 .item-tecnico {
-    flex: 0 0 48%;
-    /* Puedes ajustar el tamaño según tus preferencias */
-    margin-bottom: 10px;
-    /* Espacio entre los elementos */
-    text-align: center;
-    margin-top: 30px;
+  flex: 0 0 48%;
+  /* Puedes ajustar el tamaño según tus preferencias */
+  margin-bottom: 10px;
+  text-align: center;
+  margin-top: 30px;
+  overflow: visible;
 }
 
 .certificados-tecnicos .item-tecnico img {
-    max-width: 100px;
-    max-height: 100px;
-    flex: 0 0 auto;
-    margin: 0 10px;
+  max-width: 100px;
+  max-height: 100px;
+  flex: 0 0 auto;
+  margin: 0 10px;
 }
 
 /*-------------HABILIDADES BLANDAS--------------*/
 .habilidades-blandas {
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    padding: 6px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 6px;
 }
 
 .lista-habilidades-blandas {
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    list-style: none;
-    padding: 6px;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  list-style: none;
+  padding: 6px;
 }
 
 .item-habilidades-blandas::before {
-    /*Pone un icono frente a los elementos de la lista*/
-    content: "💾 ";
+  content: "💾";
 }
 
 .item-tecnico img {
-    width: 150px;
-    /* Ajusta el ancho de la imagen según sea necesario */
-    height: auto;
-    /* Ajusta la altura de la imagen de forma proporcional */
+  width: 150px;
+  height: auto;
 }
 
 .item-tecnico p {
-    margin-top: 5px;
-    /* Ajusta el margen superior para separar la imagen del texto */
+  margin-top: 5px;
 }
 
 /*-------EDUCACION--------------------------------------EDUCACION------------------------------------------------EDUCACION-------*/
 .educacion {
-    width: 53%;
-    height: 600px;
-    /* Establecido un alto fijo de 600px */
-    margin: 30px;
-    background: rgba(255, 255, 255, 0.5);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    view-timeline-name: --animacion;
-    view-timeline-axis: block;
-    animation-timeline: --animacion;
-    animation-name: show;
-    animation-range: entry 25% cover 50%;
-    animation-fill-mode: both;
+  width: 53%;
+  height: 600px;
+  /* Establecido un alto fijo de 600px */
+  margin: 30px;
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  view-timeline-name: --animacion;
+  view-timeline-axis: block;
+  animation-timeline: --animacion;
+  animation-name: show;
+  animation-range: entry 25% cover 50%;
+  animation-fill-mode: both;
 }
 
 .titulo-educacion {
-    font-size: 50px;
-    color: #04254a;
-    text-align: center;
-    margin-top: 10px;
+  font-size: 50px;
+  color: var(--primary);
+  text-align: center;
+  margin-top: 10px;
 }
 
 .detalle-educacion,
 .certificados {
-    width: 100%;
-    padding: 1%;
-    font-size: 24px;
-    text-align: center;
-    border: #04254a;
-    border-radius: 10px;
-    margin-bottom: 1%;
+  width: 100%;
+  padding: 1%;
+  font-size: 24px;
+  text-align: center;
+  border: var(--primary);
+  border-radius: 10px;
+  margin-bottom: 1%;
 }
 
 .contenedor-de-educacion {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  box-sizing: border-box;
 }
-
-
 
 /*-------FORMULARIO--------------------------------------FORMULARIO------------------------------------------------FORMULARIO-------*/
 .formulario {
-    width: 100%;
-    margin: 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    border: none;
-    animation-range: entry 25% cover 50%;
-    /*la imagen comiensa con 25% y termina 50%*/
-    animation-fill-mode: both;
-    /*Funciona en ambos sentido (de arriba a bajo y de abajo para arriba)*/
+  width: 100%;
+  margin: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border: none;
+  animation-range: entry 25% cover 50%;
+  /*la imagen comiensa con 25% y termina 50%*/
+  animation-fill-mode: both;
+  /*Funciona en ambos sentido (de arriba a bajo y de abajo para arriba)*/
 }
 
 .titulo-form {
-    font-size: 30px;
-    color: #3895EA;
-    text-align: center;
+  font-size: 30px;
+  color: var(--primary);
+  text-align: center;
 }
 
 form {
-    width: 50%;
-    /* Reducir el ancho del formulario para mejorar la legibilidad */
-    padding: 20px;
-    /* Aumentar el espacio interno para mejorar la presentación */
-    border-radius: 5px;
-    backdrop-filter: blur(10px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    view-timeline-name: --animacion;
-    /*Nombre de la animacion*/
-    view-timeline-axis: block;
-    /*Elegimos el eje*/
-    animation-timeline: --animacion;
-    animation-name: show;
-    animation-range: entry 25% cover 50%;
-    /*la imagen comiensa con 25% y termina 50%*/
-    animation-fill-mode: both;
-    /*Funciona en ambos sentido (de arriba a bajo y de abajo para arriba)*/
+  width: 50%;
+  /* Reducir el ancho del formulario para mejorar la legibilidad */
+  padding: 20px;
+  /* Aumentar el espacio interno para mejorar la presentación */
+  border-radius: 5px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  view-timeline-name: --animacion;
+  /*Nombre de la animacion*/
+  view-timeline-axis: block;
+  /*Elegimos el eje*/
+  animation-timeline: --animacion;
+  animation-name: show;
+  animation-range: entry 25% cover 50%;
+  /*la imagen comiensa con 25% y termina 50%*/
+  animation-fill-mode: both;
+  /*Funciona en ambos sentido (de arriba a bajo y de abajo para arriba)*/
 }
 
 #planilla input[type="text"],
 #planilla input[type="tel"],
 #planilla input[type="email"],
 #planilla textarea {
-    display: block;
-    margin-bottom: 20px;
-    width: 100%;
-    /* Modificado para ocupar el 100% del ancho del contenedor */
-    padding: 10px;
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-left: 10px;
-
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+  /* Modificado para ocupar el 100% del ancho del contenedor */
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-left: 10px;
 }
 
 #planilla input[type="text"] {
-    height: 50px;
+  height: 50px;
 }
 
 #planilla input::placeholder,
 #planilla textarea::placeholder {
-    font-size: 18px;
-    margin-left: 10%;
-    color: #CECECE;
+  font-size: 18px;
+  margin-left: 10%;
+  color: #c5c5c5;
 }
 
 .enviar {
-    width: 250%;
-    padding: 15px 0;
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-    background: #3895EA;
-    border: none;
-    border-radius: 5px;
-    transition: background 0.3s, transform 0.3s;
-    cursor: pointer;
+  width: 250%;
+  padding: 15px 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background: var(--seconds);
+  border: none;
+  border-radius: 5px;
+  transition: background 0.3s, transform 0.3s;
+  cursor: pointer;
 }
 
 .enviar:hover {
-    background: #dcadb7;
-    transform: scale(1.05);
+  background: var(--third);
+  transform: scale(1.05);
 }
 
 .informacion {
-    width: 100%;
-    background: #1E2B38;
-    text-align: center;
+  width: 100%;
+  background: var(--primary);
+  text-align: center;
 }
 
-
-.redes {
-    height: 200px;
+/*-------FOOTER--------------------------------------FOOTER------------------------------------------------FOOTER-------*/
+footer {
+  background: linear-gradient(to bottom, var(--seconds), var(--primary));
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.01);
+}
+.redes-sociales {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.icono-redes {
-    width: 7%;
-    margin: 65px 45px;
-    padding: 0.5%;
-    border-radius: 5px;
+.redes-sociales li {
+  list-style: none;
+  width: 7%;
+  margin: auto 25px;
+  border-radius: 5px;
 }
 
 .copy-autor,
 .copy-imagenes {
-    text-decoration: none;
-    color: #f2f2f2;
-    font-size: 20px;
+  text-decoration: none;
+  color: #f2f2f2;
+  font-size: 25px;
+  text-align: center;
+}
+
+.copy-autor {
+  padding-bottom: 2, 5%;
 }
 
 .figma {
-    text-decoration: none;
-    color: #f2f2f2;
+  text-decoration: none;
+  color: #f2f2f2;
 }
 
 /*--------------------ANIMACION----------------------------------------------------*/
 @keyframes show {
-    from {
-        /*  Va a ser un 25% de su tamaño original y transparente al iniciar la animacion*/
-        opacity: 0;
-        scale: 25%;
-    }
+  from {
+    /*  Va a ser un 25% de su tamaño original y transparente al iniciar la animacion*/
+    opacity: 0;
+    scale: 25%;
+  }
 
-    to {
-        /* Va a finalizar con el color y el tamaño normal*/
-        opacity: 1;
-        scale: 100%;
-    }
+  to {
+    /* Va a finalizar con el color y el tamaño normal*/
+    opacity: 1;
+    scale: 100%;
+  }
 }
-
-
-/*--------------------RESPONSIBIDAD----------------------------------------------------*/
-@media screen and (max-width:1024px) {
-    heder {
-        width: 100%;
-    }
-
-    main {
-        width: 100%;
-        background: #dcadb7;
-    }
-
-    footer {
-        width: 100%;
-    }
-
-    form {
-        background: bisque;
-    }
-
-    .enviar {
-        background: black;
-    }
-}
-
-@media screen and (max-width:768px) {}
-
-@media screen and (max-width:600px) {}
-
-@media screen and (max-width:480px) {}
-
-@media screen and (max-width:320px) {}

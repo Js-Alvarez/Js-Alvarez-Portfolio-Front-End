@@ -16,53 +16,62 @@
 
 <body >
     <header class="header" id="inicio">
-        <nav class="nav">
-            <ul class="menu">
-                <li class="nav-menu-item"><a href="#inicio">Inicio</a></li>
-                <li class="nav-menu-item"><a href="#proyectos">Proyectos</a></li>
-                <li class="nav-menu-item"><a href="#habilidades">Habilidades</a></li>
-                <li class="nav-menu-item"><a href="#educacion">Educacion</a></li>
-                <li class="nav-menu-item"><a href="#formulario">Contacto</a></li>
-            </ul>
-
-            <label for="toggle" id="label_toggle">&#127771;</label>
-            <input type="checkbox" id="toggle">
-        </nav>
-    </header>
-    <section class="fondo">
-        <article class="logo">
-            <p class="nombre">Alvarez Jesica</p>
-            <p class="profesion">Desarrolladora Web</p>
-        </article>
-
-        <article class="retrato">
-            <img src="./imagenes/fotoAutora.png" alt="Foto de la autora">
-            
-        </article>
-    </section>
-
-    <section class="presentacion">
-        <div class="detalle">
-            <h1>Acerca de Mì</h1>
-
-            <div class="parrafo">
-                <p>
-                    "Me apasiona el desarrollo digital y cuento con 6 años de experiencia en el sector bancario, lo
-                    que
-                    me ha brindado habilidades de comunicación, análisis y gestión de proyectos. Mi objetivo es
-                    combinar
-                    mi experiencia financiera con las últimas tecnologías digitales para crear experiencias
-                    excepcionales.
-                    <br> Siempre estoy ávida de aprender. Aspiro a ser una profesional que aporte un valor
-                    significativo
-                    a cualquier equipo y proyecto."
-                </p>
-            </div>
+        <div class="image-container">
+            <img src="./imagenes/fondoHeader.jpg" alt="Fondo Header" title="Fondo Header">
         </div>
-    </section>
-    </header>
 
+        <section class="nav">
+            <div class="logo">
+                <img src="./imagenes/Iconos de redes/logo JA" alt="Logo JA" title="Logo J.A">
+            </div>
+           
+            <nav class="menu">
+                <ul class="lista-menu">
+                    <li class="nav-menu-item"><a href="#inicio">Inicio</a></li>
+                    <li class="nav-menu-item"><a href="#proyectos">Proyectos</a></li>
+                    <li class="nav-menu-item"><a href="#habilidades">Habilidades</a></li>
+                    <li class="nav-menu-item"><a href="#educacion">Educacion</a></li>
+                    <li class="nav-menu-item"><a href="#formulario">Contacto</a></li>
+                </ul>
+    
+                <label for="toggle" id="label_toggle">&#127771;</label>
+                <input type="checkbox" id="toggle">
+            </nav>
+            
+        </section>
+
+        <section class="descripcion">
+            <article class="contenedor-informacion">
+                <h1 class="nombre">Alvarez Jesica</h1>
+                <p class="profesion">Desarrolladora Web</p>
+            </article>
+    
+            <article class="retrato">
+                <img src="./imagenes/fotoAutora.png" alt="Foto de la autora" title="Foto de la autora">                
+            </article>
+        </section>
+    </header>
+    
     <main class="main">
+        <section class="presentacion">
+            <div class="detalle">
+                <h1>Acerca de Mí</h1>
+    
+                <div class="parrafo">
+                    <p>
+                        "Me apasiona el desarrollo digital y cuento con 6 años de experiencia en el sector bancario, lo
+                        que
+                        me ha brindado habilidades de comunicación, análisis y gestión de proyectos. Mi objetivo es
+                        combinar
+                        mi experiencia financiera con las últimas tecnologías digitales para crear experiencias
+                        excepcionales.
+                        <br> Siempre estoy ávida de aprender. Aspiro a ser una profesional que aporte un valor
+                        significativo
+                        a cualquier equipo y proyecto."
+                    </p>
+                </div>
+            </div>
+        </section>
         <section class="proyectos" id="proyectos">
             <div class="titulo">
                 <h2 >Proyectos</h2>
@@ -208,8 +217,6 @@
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/j40akBlwFoM?si=VtOM6oilQK8b0a0x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </section>
-    </main>
-    <footer class="footer">
 
         <fieldset class="formulario" id="formulario">
 
@@ -233,30 +240,44 @@
             </form>
 
         </fieldset>
+    </main>
+    <footer class="footer">
+        <ul class="redes-sociales">
+            <li>
+                <a href="https://wa.me/5493885961454?text=Hola,%20gracias%20por%20contactarme.%20¿Cómo%20puedo%20ayudarte?">
+                    <img class="icono-redes" src="./imagenes/Iconos de redes/WhatsApp.png" alt="WhatsApp" title="WhatsApp">
+                </a>
 
-        <section class="informacion">
-            <div class="redes">
-                <a
-                    href="https://wa.me/5493885961454?text=Hola,%20gracias%20por%20contactarme.%20¿Cómo%20puedo%20ayudarte?"><img
-                        class="icono-redes" src="./imagenes/Iconos de redes/WhatsApp.png" alt="WhatsApp"></a>
-                <a href="mailto:alvarezjs1990@gmail.com"><img class="icono-redes"
-                        src="./imagenes/Iconos de redes/Correo Electronico.png" alt="correo-electronico"></a>
-                <a href="https://www.linkedin.com/in/alvarez-jesica/"><img class="icono-redes"
-                        src="./imagenes/Iconos de redes/Linkedin.png" alt="Linkedin"></a>
-                <a href="https://github.com/Js-Alvarez"><img class="icono-redes"
-                        src="./imagenes/Iconos de redes/Github.png" alt="Github"></a>
-            </div>
+            </li>
+            <li>
+                <a href="mailto:alvarezjs1990@gmail.com">
+                    <img class="icono-redes" src="./imagenes/Iconos de redes/Correo Electronico.png" alt="Correo Electronico" title="Correo Electronico">
+                </a>
+            </li>
+            <li> 
+                <a href="https://www.linkedin.com/in/alvarez-jesica/">
+                    <img class="icono-redes" src="./imagenes/Iconos de redes/Linkedin.png" alt="Linkedin" title="Linkedin">
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/Js-Alvarez">
+                    <img class="icono-redes" src="./imagenes/Iconos de redes/Github.png" alt="Github" title="Github">
+                </a>
+            </li>
+        </ul>
 
-            <div class="copy-imagenes">
+        <section class="copy">
+            <article class="copy-imagenes">
                 <a class="figma" href="https://www.flaticon.com/free-icons/figma" title="figma icons">Figma icons
                     created by Freepik-Flaticon</a>
-            </div>
-
-            <div class="copy-autor">
+            </article>
+    
+            <article class="copy-autor">
                 <p>&copy; 2023 Developer by Alvarez Jesica. Todos los derechos reservados.</p>
+            </article>
+    
             </div>
-
-            </div>
+        </article>
     </footer>
 
     <script src="./script.js"></script>
