@@ -14,60 +14,87 @@
 }
 
 /*-------Cabecera--------------------------------------Cabecera------------------------------------------------Cabecera-------*/
-.image-container {
+.image-container img {
   width: 100%;
-  display: inline-block;
+  height: 500px;
 }
 
-.image-container img {
+.nav-bar {
   width: 100%;
 }
 
 .logo img {
-  width: 5%;
-  height: 5%;
+  width: 3%;
   border-radius: 100%;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 1%;
+  left: 1%;
 }
 
 .menu {
+  width: 100%;
+  height: auto;
   position: fixed;
   width: 100%;
-  padding: 30px 20px;
   position: absolute;
+  align-items: center;
   top: 0;
   left: o;
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
-  );
+  background: linear-gradient(to bottom,
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0));
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.01);
 }
 
 .lista-menu {
-  list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
-.descripcion {
+.nav-menu-item {
+  margin: 15px;
+  list-style: none;
+  color: var(--primary);
+}
+
+.nav-menu-item a {
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.descripcion .nombre-profecion {
+  width: 35%;
+  height: 20%;
+  top: 15%;
   position: absolute;
-  top: 0;
-  left: 0;
+  left: 33%;
+  color: var(--primary);
+  text-align: center;
+  background: linear-gradient(to bottom,
+      rgba(255, 255, 255, 3),
+      rgba(255, 255, 255, 0));
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+  border-radius: 5%;
+  align-items: center;
 }
 
-.descripcion .contenedor-informacion{
-    color: #f2f2f2;
-    font-size: %;
-
+.nombre-profecion h1 {
+  font-size: 300%;
+  margin-top: 2%;
 }
 
-.descripcion .retrato img {
-  width: 25%;
+.nombre-profecion p {
+  font-size: 220%;
+  margin: 5%;
+}
+
+.retrato img {
+  position: absolute;
+  width: 10%;
+  top: 45%;
+  left: 45%;
   border-radius: 100%;
   border: solid white;
 }
@@ -81,17 +108,11 @@ main {
   align-items: center;
   background: url("./imagenes/acuarela") center/cover no-repeat fixed;
   background-color: rgba(0, 0, 0, 0.5);
-  position: relative;
 }
 
 /* -------------Configura el desplazamiento suave en todo el documento -------------------------------------------------*/
 html {
   scroll-behavior: smooth;
-}
-
-/* -------------Para Js cambiar de Claro a Oscuro-------------------------------------------------*/
-body {
-  transition: all 1.5s ease;
 }
 
 /* -------------Para el rediccionamiento del Nav -------------------------------------------------*/
@@ -100,7 +121,25 @@ section[id] {
   scroll-margin-top: 50px;
 }
 
-/*--------PROYECTO--------------------------------------PROYECTO------------------------------------------------PROYECTO-------*/
+/*--------MAIN-PRESENTACION--------------------------------------MAIN------------------------------------------------MAIN-------*/
+.presentacion{
+  width: 50%;
+  margin-top: 100px;
+  text-align: center;
+  font-weight:bold;
+  font-style: italic;
+}
+
+.detalle h1{
+  color: var(--primary);
+  font-size: 35px;
+  margin-bottom: 2%;
+}
+
+.parrafo p{
+  font-size: 20px;
+  
+}
 
 /*-------PROYECTO--------------------------------------PROYECTO------------------------------------------------PROYECTO-------*/
 
@@ -431,6 +470,7 @@ footer {
   background: linear-gradient(to bottom, var(--seconds), var(--primary));
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.01);
 }
+
 .redes-sociales {
   height: 100px;
   display: flex;
