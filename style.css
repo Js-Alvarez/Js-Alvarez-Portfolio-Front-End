@@ -34,8 +34,6 @@
 .menu {
   width: 100%;
   height: auto;
-  position: fixed;
-  width: 100%;
   position: absolute;
   align-items: center;
   top: 0;
@@ -49,19 +47,37 @@
 .lista-menu {
   display: flex;
   justify-content: center;
-  align-items: center;
-
+  align-items: center; 
 }
 
 .nav-menu-item {
   margin: 15px;
   list-style: none;
-  color: var(--primary);
+  cursor: pointer;
+  transition:
+  scale 0.25s ease-in,
+  opacity 0.25s ease-in,
+  filter 0.25 ease-in;
+
+  &:hover{ 
+    scale: 1.2;
+  }
 }
 
+.lista-menu:has(.nav-menu-item:hover) .nav-menu-item:not(:hover){
+  scale: 0.8;
+  opacity: 0.8;
+  filter:blur(4px);
+}
+
+
 .nav-menu-item a {
+  padding:5px 15px;
   text-decoration: none;
   font-size: 30px;
+  color: var(--third);
+  background: black;
+  border-radius: 15%;
 }
 
 .descripcion .nombre-profecion {
