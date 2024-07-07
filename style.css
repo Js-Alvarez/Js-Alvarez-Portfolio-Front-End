@@ -42,6 +42,7 @@
       rgba(255, 255, 255, 1),
       rgba(255, 255, 255, 0));
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.01);
+  position: fixed;
 }
 
 .lista-menu {
@@ -66,18 +67,18 @@
 
 .lista-menu:has(.nav-menu-item:hover) .nav-menu-item:not(:hover){
   scale: 0.8;
-  opacity: 0.8;
+  opacity: 3.2;
   filter:blur(4px);
 }
 
 
 .nav-menu-item a {
-  padding:5px 15px;
+  padding:5px 45px;
   text-decoration: none;
   font-size: 30px;
   color: var(--third);
   background: black;
-  border-radius: 15%;
+  border-radius: 2em 0;
 }
 
 .descripcion .nombre-profecion {
