@@ -21,38 +21,31 @@
 
 .nav-bar {
   width: 100%;
-}
-
-.logo img {
-  width: 3%;
-  border-radius: 100%;
-  position: absolute;
-  top: 1%;
-  left: 1%;
+  position: fixed;
 }
 
 .menu {
   width: 100%;
   height: auto;
-  position: absolute;
+  position: fixed;
   align-items: center;
   top: 0;
   left: o;
   background: linear-gradient(to bottom,
       rgba(255, 255, 255, 1),
       rgba(255, 255, 255, 0));
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.01);
-  position: fixed;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.01);
 }
 
 .lista-menu {
   display: flex;
   justify-content: center;
   align-items: center; 
+  flex-wrap: wrap;
 }
 
 .nav-menu-item {
-  margin: 15px;
+  margin: 10px;
   list-style: none;
   cursor: pointer;
   transition:
@@ -67,26 +60,30 @@
 
 .lista-menu:has(.nav-menu-item:hover) .nav-menu-item:not(:hover){
   scale: 0.8;
-  opacity: 3.2;
+  opacity: 0.3;
   filter:blur(4px);
 }
 
 
 .nav-menu-item a {
-  padding:5px 45px;
+  padding:10px 20px;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 1.5rem;
   color: var(--third);
   background: black;
   border-radius: 2em 0;
+
 }
 
 .descripcion .nombre-profecion {
-  width: 35%;
-  height: 20%;
+  width: 50%;
+  max-width: 600px; 
+  height: auto;
+  padding: 20px;
   top: 15%;
   position: absolute;
   left: 33%;
+  right: 20%;
   color: var(--primary);
   text-align: center;
   background: linear-gradient(to bottom,
@@ -95,25 +92,105 @@
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
   border-radius: 5%;
   align-items: center;
+ 
+}
+
+.detalle h1{
+  margin-top:25px ;
 }
 
 .nombre-profecion h1 {
-  font-size: 300%;
-  margin-top: 2%;
+  font-size: 2em;
+  margin-top: 10px;
 }
 
 .nombre-profecion p {
-  font-size: 220%;
-  margin: 5%;
+  font-size: 1.5em;
+  margin:10px;
 }
 
 .retrato img {
   position: absolute;
-  width: 10%;
-  top: 45%;
-  left: 45%;
+  max-width: 250px;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 100%;
   border: solid white;
+}
+
+/* Media queries para diseño responsivo */
+@media (max-width: 768px) {
+  .logo {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .nav-menu-item a {
+    font-size: 1.2em;
+    padding: 8px 16px;
+  }
+
+  .nombre-profecion h1 {
+    font-size: 2em;
+  }
+
+  .nombre-profecion p {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    width: 8%;
+  }
+
+  .descripcion .nombre-profecion {
+    width: 70%;
+    left: 15%;
+  }
+
+  .nav-menu-item a {
+    font-size: 2em;
+    padding: 6px 12px;
+  }
+
+  .nombre-profecion h1 {
+    font-size: 1.5em;
+  }
+
+  .nombre-profecion p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    width: 15%;
+  }
+
+  .descripcion .nombre-profecion {
+    width: 90%;
+    left: 5%;
+  }
+
+  .nav-menu-item a {
+    font-size: 0.8em;
+    padding: 4px 8px;
+  }
+
+  .nombre-profecion h1 {
+    font-size: 1.2em;
+  }
+
+  .nombre-profecion p {
+    font-size: 0.8em;
+  }
+
+  .retrato img {
+    width: 20%;
+  }
 }
 
 /*-------MAIN--------------------------------------MAIN------------------------------------------------MAIN-------*/
@@ -171,16 +248,6 @@ section[id] {
   flex-direction: column;
   /* Establece el eje principal como columna */
   align-items: center;
-  view-timeline-name: --animacion;
-  /*Nombre de la animacion*/
-  view-timeline-axis: block;
-  /*Elegimos el eje*/
-  animation-timeline: --animacion;
-  animation-name: show;
-  animation-range: entry 25% cover 50%;
-  /*la imagen comiensa con 25% y termina 50%*/
-  animation-fill-mode: both;
-  /*Funciona en ambos sentido (de arriba a bajo y de abajo para arriba)*/
 }
 
 .titulo {
@@ -230,91 +297,53 @@ section[id] {
   opacity: 1;
 }
 
-/*------------------------ HABILIDADES TEcnicas-------------------------------------------------*/
-.habilidades {
-  width: 53%;
+/*------------------------ HABILIDADES Técnicas-------------------------------------------------*/
+.habilidades{
+  width: 56%;
+  margin-top: 10ox;
+  text-align: center;
   background: rgba(255, 255, 255, 0.5);
-  /* Cambiado a un color sólido con transparencia */
-  text-align: center;
-  padding: 6px;
-  view-timeline-name: --animacion;
-  /*Nombre de la animacion*/
-  view-timeline-axis: block;
-  /*Elegimos el eje*/
-  animation-timeline: --animacion;
-  animation-name: show;
-  animation-range: entry 25% cover 50%;
-  /*la imagen comiensa con 25% y termina 50%*/
-  animation-fill-mode: both;
-  /*Funciona en ambos sentido (de arriba a bajo y de abajo para arriba)*/
+  margin-top: 35px;
 }
 
-.habilidades h2 {
-  margin-top: 6%;
-  margin-bottom: 10px;
+.titulo-tecnico{
+  margin-top: 20px;
 }
 
-.titulo-tecnico {
-  margin-bottom: 5px;
-  color: var(--primary);
-}
-
-.certificados-tecnicos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  /* O utiliza "space-between" según tus preferencias */
-}
-
-.especializacion {
-  border-radius: 5px;
-  margin: 10px;
-  /* Ajusta según tus preferencias de margen */
-  padding: 6px;
-  text-align: center;
-  width: 30%;
-  /* Ajusta según tus preferencias de ancho */
-}
-
-.subtitulo-tecnico {
-  font-size: 25px;
-}
-
-.especializacion:hover {
-  border: 8px solid var(--primary);
-  background: var(--seconds);
-  border-radius: 5px;
+.subtitulo-tecnico, .subtitulo-tecnico-UI, .subtitulo-tecnico-BD{
+text-align: left;
+margin: 22px;
 }
 
 .lista-habilidades-tecnicas {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  /* Puedes ajustar esto según tus preferencias */
+  justify-content: space-around; 
   padding: 0;
-  list-style: none;
+  list-style: none; 
 }
 
 .item-tecnico {
-  flex: 0 0 48%;
-  /* Puedes ajustar el tamaño según tus preferencias */
-  margin-bottom: 10px;
-  text-align: center;
-  margin-top: 30px;
-  overflow: visible;
+  display: flex;
+  align-items: center;
+  margin: 5px;
 }
 
-.certificados-tecnicos .item-tecnico img {
-  max-width: 100px;
-  max-height: 100px;
-  flex: 0 0 auto;
-  margin: 0 10px;
+.item-tecnico p {
+  margin-top: 5px;
+  font-size: 0.5em; 
+  text-align: center;
+  padding: 5px;
+}
+ 
+.lista-habilidades-tecnicas .item-tecnico img{
+  width: 2em;
+  height: auto;
 }
 
 /*-------------HABILIDADES BLANDAS--------------*/
 .habilidades-blandas {
   width: 100%;
-  margin-top: 20px;
+  margin-top:auto;
   margin-bottom: 30px;
   padding: 6px;
 }
@@ -322,13 +351,13 @@ section[id] {
 .lista-habilidades-blandas {
   justify-content: center;
   align-items: center;
-  font-size: 30px;
+  font-size: 25px;
   list-style: none;
   padding: 6px;
 }
 
 .item-habilidades-blandas::before {
-  content: "💾";
+  content: "🤝";
 }
 
 .item-tecnico img {
@@ -517,19 +546,4 @@ footer {
 .figma {
   text-decoration: none;
   color: #f2f2f2;
-}
-
-/*--------------------ANIMACION----------------------------------------------------*/
-@keyframes show {
-  from {
-    /*  Va a ser un 25% de su tamaño original y transparente al iniciar la animacion*/
-    opacity: 0;
-    scale: 25%;
-  }
-
-  to {
-    /* Va a finalizar con el color y el tamaño normal*/
-    opacity: 1;
-    scale: 100%;
-  }
 }
