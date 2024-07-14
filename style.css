@@ -30,7 +30,7 @@
   position: fixed;
   align-items: center;
   top: 0;
-  left: o;
+  left: 0;
   background: linear-gradient(to bottom,
       rgba(255, 255, 255, 1),
       rgba(255, 255, 255, 0));
@@ -100,12 +100,12 @@
 }
 
 .nombre-profecion h1 {
-  font-size: 2em;
+  font-size: 3em;
   margin-top: 10px;
 }
 
 .nombre-profecion p {
-  font-size: 1.5em;
+  font-size: 2em;
   margin:10px;
 }
 
@@ -113,18 +113,13 @@
   position: absolute;
   max-width: 250px;
   top: 55%;
-  left: 50%;
+  left: 49%;
   transform: translate(-50%, -50%);
   border-radius: 100%;
-  border: solid white;
+  border: solid white 5px;
 }
 
 /* Media queries para diseño responsivo */
-@media (max-width: 768px) {
-  .logo {
-    display: none;
-  }
-}
 
 @media (max-width: 1200px) {
   .nav-menu-item a {
@@ -133,11 +128,11 @@
   }
 
   .nombre-profecion h1 {
-    font-size: 2em;
+    font-size: 1em;
   }
 
   .nombre-profecion p {
-    font-size: 1.2em;
+    font-size: 0.8em;
   }
 }
 
@@ -181,11 +176,11 @@
   }
 
   .nombre-profecion h1 {
-    font-size: 1.2em;
+    font-size: 3em;
   }
 
   .nombre-profecion p {
-    font-size: 0.8em;
+    font-size: 1em;
   }
 
   .retrato img {
@@ -226,106 +221,123 @@ section[id] {
 
 .detalle h1{
   color: var(--primary);
-  font-size: 35px;
+  font-size: 30px;
   margin-bottom: 2%;
 }
 
 .parrafo p{
   font-size: 20px;
-  
 }
 
 /*-------PROYECTO--------------------------------------PROYECTO------------------------------------------------PROYECTO-------*/
 
-.proyectos {
-  height: auto;
-  margin: 20px;
-  text-align: center;
-  background: rgba(255, 255, 255, 0.5);
-  /* Cambiado a un color sólido con transparencia */
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.01);
+.proyectos{
+  width: 75%;
   display: flex;
-  flex-direction: column;
-  /* Establece el eje principal como columna */
+  justify-content: center;
   align-items: center;
+  height: 100%;
+  margin-top: 100px;
+  text-align: center;
+  background: #3895ea;
 }
 
 .titulo {
-  margin-bottom: 5px;
-  /* Ajusta el espacio entre el título y la lista */
   font-size: 30px;
   color: var(--primary);
-  height: 70%;
-}
-
-.proyecto h2 {
-  margin-top: 30%;
-}
-
-.proyectos-enumerados {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-
-.proyecto {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  font-size: 30px;
+  color: var(--primary);
+  height: 90vh;
   align-items: center;
   text-align: center;
+}
+
+
+
+.lista-proyectos {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  transform-style: preserve-3d;
+  animation: animate 40s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+      transform: perspective(1000px) rotateY(0deg);
+  }
+  100% {
+      transform: perspective(1000px) rotateY(360deg);
+  }
+}
+
+.proyecto{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
 }
 
 .proyecto img {
-  border: 2px solid #f2f2f2;
-  border-radius: 5px;
-  opacity: 0.5;
-  transition: border 0.3s, opacity 0.3s;
-  width: 235px;
-  margin-bottom: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 2px solid white;
+  border-radius: 18px;
+  height: 100%;
+  object-fit: cover;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
 }
 
-.proyecto p {
-  margin-top: 5px;
-}
+.proyecto:nth-child(1) img { --i: 0; }
+.proyecto:nth-child(2) img { --i: 1; }
+.proyecto:nth-child(3) img { --i: 2; }
+.proyecto:nth-child(4) img { --i: 3; }
+.proyecto:nth-child(5) img { --i: 4; }
+.proyecto:nth-child(6) img { --i: 5; }
+.proyecto:nth-child(7) img { --i: 6; }
+.proyecto:nth-child(8) img { --i: 7; }
 
-.proyecto img:hover {
-  border: 2px double var(--gray);
-  opacity: 1;
-}
 
 /*------------------------ HABILIDADES Técnicas-------------------------------------------------*/
 .habilidades{
-  width: 56%;
+  width: 60%;
   margin-top: 10ox;
   text-align: center;
-  background: rgba(255, 255, 255, 0.5);
   margin-top: 35px;
 }
 
 .titulo-tecnico{
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
+.especializacion{
+  width: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius:10px ;
+  border: dashed 5px var(--primary);
+  margin:6px
+}
 .subtitulo-tecnico, .subtitulo-tecnico-UI, .subtitulo-tecnico-BD{
 text-align: left;
-margin: 22px;
+margin: 10px 0 10px 30px;
+font-size: 20px;
 }
 
 .lista-habilidades-tecnicas {
   display: flex;
   justify-content: space-around; 
-  padding: 0;
   list-style: none; 
+  margin-bottom: 15px;
 }
 
 .item-tecnico {
   display: flex;
   align-items: center;
-  margin: 5px;
 }
 
 .item-tecnico p {
@@ -338,22 +350,25 @@ margin: 22px;
 .lista-habilidades-tecnicas .item-tecnico img{
   width: 2em;
   height: auto;
+  margin: 0 10px;
 }
-
 /*-------------HABILIDADES BLANDAS--------------*/
 .habilidades-blandas {
   width: 100%;
-  margin-top:auto;
-  margin-bottom: 30px;
   padding: 6px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius:10px ;
 }
 
 .lista-habilidades-blandas {
   justify-content: center;
   align-items: center;
+  display: flex;
   font-size: 25px;
   list-style: none;
-  padding: 6px;
+  overflow-x:scroll ;
+  border: dashed 5px var(--primary);
+  margin: 20px 0;
 }
 
 .item-habilidades-blandas::before {
@@ -363,10 +378,6 @@ margin: 22px;
 .item-tecnico img {
   width: 150px;
   height: auto;
-}
-
-.item-tecnico p {
-  margin-top: 5px;
 }
 
 /*-------EDUCACION--------------------------------------EDUCACION------------------------------------------------EDUCACION-------*/

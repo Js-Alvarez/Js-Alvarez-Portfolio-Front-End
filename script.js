@@ -12,9 +12,33 @@ toggle.addEventListener('change', (event) => {
     }
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const carrusel = document.querySelector('.carrusel-contenedor');
+    const proyectos = document.querySelectorAll('.proyecto');
+    const anterior = document.querySelector('.carrusel-anterior');
+    const siguiente = document.querySelector('.carrusel-siguiente');
+    let contador = 0;
 
-//---------------------carrusel-------------------------------//
+    function mostrarProyecto(index) {
+        carrusel.style.transform = `translateX(${-index * 100}%)`;
+    }
 
+    anterior.addEventListener('click', () => {
+        contador = (contador > 0) ? contador - 1 : proyectos.length - 1;
+        mostrarProyecto(contador);
+    });
+
+    siguiente.addEventListener('click', () => {
+        contador = (contador < proyectos.length - 1) ? contador + 1 : 0;
+        mostrarProyecto(contador);
+    });
+
+    // Auto-play (optional)
+    setInterval(() => {
+        contador = (contador < proyectos.length - 1) ? contador + 1 : 0;
+        mostrarProyecto(contador);
+    }, 5000);
+});
 
 
 
