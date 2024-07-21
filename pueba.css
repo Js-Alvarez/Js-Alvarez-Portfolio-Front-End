@@ -1,35 +1,40 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background: black;
+.proyectos {
+    width: 75%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-}
-
-.lista-proyectos {
+    height: 100%;
+    margin-top: 100px;
+    text-align: center;
+    background: #3895ea;
+  }
+  
+  .titulo {
+    font-size: 30px;
+    color: var(--primary);
+    height: 90vh;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .lista-proyectos {
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 500px; /* Ajustar la altura para incluir la información */
     transform-style: preserve-3d;
-    animation: animate 40s linear infinite; 
-}
-
-@keyframes animate {
+    animation: animate 40s linear infinite;
+  }
+  
+  @keyframes animate {
     0% {
-        transform: perspective(1000px) rotateY(0deg);
+      transform: perspective(1000px) rotateY(0deg);
     }
     100% {
-        transform: perspective(1000px) rotateY(360deg);
+      transform: perspective(1000px) rotateY(360deg);
     }
-}
-
-.proyecto{
+  }
+  
+  .proyecto {
     position: absolute;
     top: 0;
     left: 0;
@@ -37,26 +42,29 @@ body {
     height: 100%;
     transform-origin: center;
     transform-style: preserve-3d;
-}
-
-.proyecto img {
+  }
+  
+  .proyecto img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     border: 2px solid white;
     border-radius: 18px;
-    height: 100%;
+    height: 250px; /* Ajustar la altura de la imagen */
     object-fit: cover;
     transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
-}
-
-.proyecto:nth-child(1) img { --i: 0; }
-.proyecto:nth-child(2) img { --i: 1; }
-.proyecto:nth-child(3) img { --i: 2; }
-.proyecto:nth-child(4) img { --i: 3; }
-.proyecto:nth-child(5) img { --i: 4; }
-.proyecto:nth-child(6) img { --i: 5; }
-.proyecto:nth-child(7) img { --i: 6; }
-.proyecto:nth-child(8) img { --i: 7; }
-
+  }
+  
+  .proyecto:nth-child(1) img { --i: 0; }
+  .proyecto:nth-child(2) img { --i: 1; }
+  .proyecto:nth-child(3) img { --i: 2; }
+  .proyecto:nth-child(4) img { --i: 3; }
+  .proyecto:nth-child(5) img { --i: 4; }
+  .proyecto:nth-child(6) img { --i: 5; }
+  .proyecto:nth-child(7) img { --i: 6; }
+  .proyecto:nth-child(8) img { --i: 7; }
+  
+  .info {
+    position:
+  }

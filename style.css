@@ -243,16 +243,14 @@ section[id] {
 }
 
 .titulo {
-  font-size: 30px;
-  color: var(--primary);
-  font-size: 30px;
+  position: relative;
+  left: 100px;
+  font-size: 50px;
   color: var(--primary);
   height: 90vh;
   align-items: center;
   text-align: center;
 }
-
-
 
 .lista-proyectos {
   position: relative;
@@ -308,56 +306,69 @@ section[id] {
   width: 60%;
   margin-top: 10ox;
   text-align: center;
-  margin-top: 35px;
+  border-radius: 10px;
 }
 
 .titulo-tecnico{
+  font-size: 50px;
+  color: var(--primary);
+  text-align: center;
   margin-top: 10px;
+
 }
 
 .especializacion{
   width: 100%;
+  height: auto;
+  margin: 10px auto 30px  ato;
   background: rgba(255, 255, 255, 0.3);
-  border-radius:10px ;
-  border: dashed 5px var(--primary);
-  margin:6px
+
 }
 .subtitulo-tecnico, .subtitulo-tecnico-UI, .subtitulo-tecnico-BD{
 text-align: left;
 margin: 10px 0 10px 30px;
-font-size: 20px;
+font-size: 35px;
 }
 
 .lista-habilidades-tecnicas {
   display: flex;
   justify-content: space-around; 
   list-style: none; 
-  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.lista-habilidades-tecnicas ul{
+  margin: 10px auto 50px  ato;
+
 }
 
 .item-tecnico {
+ /* animation: scroll 40s linear infinite;*/
   display: flex;
   align-items: center;
 }
 
 .item-tecnico p {
   margin-top: 5px;
-  font-size: 0.5em; 
+  font-size: 1.5em; 
   text-align: center;
   padding: 5px;
 }
  
 .lista-habilidades-tecnicas .item-tecnico img{
-  width: 2em;
+  width: 3.5em;
   height: auto;
-  margin: 0 10px;
+  margin: 5px 10px;
 }
+
+
 /*-------------HABILIDADES BLANDAS--------------*/
 .habilidades-blandas {
   width: 100%;
-  padding: 6px;
-  background: rgba(255, 255, 255, 0.3);
-  border-radius:10px ;
+  height: auto;
+  margin: auto;
+
+
 }
 
 .lista-habilidades-blandas {
@@ -366,9 +377,25 @@ font-size: 20px;
   display: flex;
   font-size: 25px;
   list-style: none;
-  overflow-x:scroll ;
-  border: dashed 5px var(--primary);
-  margin: 20px 0;
+  border-radius:10px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.descripcion-habilidades-blandas{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+}
+
+.lista-habilidades-blandas{
+  width: calc(200px * 10);
+ 
+}
+
+.lista-habilidades-blandas .item-habilidades-blandas{
+  animation: scroll 40s linear infinite;
+  margin: 25px 10px;
 }
 
 .item-habilidades-blandas::before {
@@ -378,6 +405,17 @@ font-size: 20px;
 .item-tecnico img {
   width: 150px;
   height: auto;
+}
+
+@keyframes scroll {
+  0% {
+      --webkit-transform: translateX(0);
+       transform: translateX(0);
+  }
+  100% {
+    --webkit-transform: translateX(calc(-200px * 10));
+     transform: translateX(calc(-200px * 5));
+}
 }
 
 /*-------EDUCACION--------------------------------------EDUCACION------------------------------------------------EDUCACION-------*/

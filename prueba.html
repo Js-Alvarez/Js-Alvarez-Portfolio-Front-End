@@ -1,37 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrusel 3D</title>
     <link rel="stylesheet" href="./pueba.css">
 </head>
+
 <body>
-    <section class="lista-proyectos">
-        <article class="proyecto">
-            <img src="./imagenes/panda 1.jpg" alt="proyecto 1">
-        </article>
-        <article class="proyecto">
-            <img src="./imagenes/panda 2.jpg" alt="proyecto 2">
-        </article>
-        <article class="proyecto">
-            <img src="./imagenes/panda 3.jpg" alt="proyecto 3">
-        </article>
-        <article class="proyecto">
-            <img src="./imagenes/panda 4.jpg" alt="proyecto 4">
-        </article>
-        <article class="proyecto">
-            <img src="./imagenes/panda 1.jpg" alt="proyecto 5">
-        </article>
-        <article class="proyecto">
-            <img src="./imagenes/panda 2.jpg" alt="proyecto 6">
-        </article>
-        <article class="proyecto">
-            <img src="./imagenes/panda 3.jpg" alt="proyecto 7">
-        </article>
-        <article class="proyecto">
-            <img src="./imagenes/panda 4.jpg" alt="proyecto 8">
-        </article>
-    </section>
+    <div class="container">
+        <input type="radio" name="slider" id="s1">
+        <input type="radio" name="slider" id="s2">
+        <input type="radio" name="slider" id="s3">
+        <input type="radio" name="slider" id="s4">
+        <input type="radio" name="slider" id="s5">
+    </div>
+
+    <div class="card">
+        <label for="s1" id="slaider1">test
+            <div class="cards">
+
+                <div class="image">
+                    <img src="./imagenes/panda 1.jpg" alt="Proyecto N°1" title="Proyecto N°1">
+                    <div class="dots">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="infos">
+                    <spam class="name"> Proyecto N°1</spam>
+                    <spam class="lorem">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, consequuntur. Doloribus quae, sed,
+                        quos deserunt numquam minima molestiae sint laborum ratione labore reprehenderit dolorem,
+                        officiis eligendi non cumque sit inventore!
+                    </spam>
+
+                    <a href="#" class="btn-details">details</a>
+
+                    <div class="actions">
+                        <i class="fa-solid fa-card-shopping"></i>
+                        <i></i>
+                    </div>
+                </div>
+
+            </div>
+        </label>
+    </div>
+
+
+
 </body>
+
 </html>
